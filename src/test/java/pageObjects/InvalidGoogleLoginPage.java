@@ -64,6 +64,7 @@ public class InvalidGoogleLoginPage extends BasePage {
 	}
 
 	public void printErrorMessage() {
+		explicitWait(errormessage);
 		String message = errormessage.getText();
 		System.out.println("\nError message displayed : " + message);
 

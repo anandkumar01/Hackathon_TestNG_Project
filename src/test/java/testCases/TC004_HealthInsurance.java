@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import factory.BaseClass;
 import pageObjects.HealthInsurancePage;
 
-public class TC003_HealthInsurance extends BaseClass {
+public class TC004_HealthInsurance extends BaseClass {
 	HealthInsurancePage health;
 
 	@Test

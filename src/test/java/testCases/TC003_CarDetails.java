@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import factory.BaseClass;
 import pageObjects.CarDetailsPage;
 
-public class TC002_CarDetails extends BaseClass {
+public class TC003_CarDetails extends BaseClass {
 	CarDetailsPage car;
 
 	@Test
