@@ -33,6 +33,7 @@ public class BaseClass {
 		}
 
 		if (driver != null) {
+			System.out.println("Starting the browser session..");
 			driver.manage().deleteAllCookies();
 			driver.get(property.getProperty("baseUrl"));
 			driver.manage().window().maximize();
@@ -43,6 +44,7 @@ public class BaseClass {
 	@AfterClass
 	public void closeBrowser() {
 		if (driver != null) {
+			System.out.println("Closing the browser session..");
 			driver.quit();
 		}
 	}

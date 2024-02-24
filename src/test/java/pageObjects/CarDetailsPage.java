@@ -54,24 +54,19 @@ public class CarDetailsPage extends BasePage {
 	@FindBy(xpath = "//a[@data-track-label='model-name']/following-sibling::div[2]")
 	List<WebElement> carlaunchdate;
 
-	public void hoverNewCars(String newCars) {
+	public void hoverNewCars() {
 		zigwheels.click();
 		explicitWait(newcars);
-		for (WebElement element : navheaderlist) {
-			if (newCars.equals(element.getText())) {
-				hoverOnElement(element);
-				break;
-			}
-		}
+		hoverOnElement(newcars);
 	}
 
 	public void clickUpcomingCars() {
 		upcomingcar.click();
 	}
 
-	public void selectManufacturer(String manufacturer) {
+	public void selectManufacturer() {
 		Select select = new Select(selectmanufacturer);
-		select.selectByVisibleText(manufacturer);
+		select.selectByVisibleText("Tata");
 	}
 
 	public void clickToViewMore() {

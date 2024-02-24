@@ -91,6 +91,7 @@ public class HealthInsurancePage extends BasePage {
 	}
 
 	public void fillBasicDetails() throws IOException, InterruptedException {
+		explicitWait(scroll);
 		scrollToElement(scroll);
 		checkmale.click();
 		inputname.sendKeys("Anand");
