@@ -1,16 +1,20 @@
 package testCases;
 
 import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.List;
 
 import org.testng.annotations.Test;
 
 import factory.BaseClass;
 import pageObjects.BikeDetailsPage;
+import utilities.WriteExcelData;
 
 public class TC002_BikeDetails extends BaseClass {
 	BikeDetailsPage bike;
+	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 
-	@Test
+	@Test(priority = 0)
 	public void testBikeDetails() throws IOException {
 		// Pass the WebDriver instance to the BikeDetailsPage constructor
 		bike = new BikeDetailsPage(driver);
@@ -19,5 +23,11 @@ public class TC002_BikeDetails extends BaseClass {
 		bike.selectManufacturer();
 		bike.clickToViewMore();
 		bike.printUpcomingBikeDetails();
+	}
+
+	@Test(priority = 1)
+	public void testWriteBikeDetails() {
+		LinkedHashMap<String, List<String>> bikeDetailsMap = bike.getUpcomingBikeDetails();
+		WriteExcelData.writeBikeDetails(bikeDetailsMap, filepath);
 	}
 }
