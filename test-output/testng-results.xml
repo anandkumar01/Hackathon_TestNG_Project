@@ -1,140 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-25T15:01:32 IST" name="Suite" finished-at="2024-02-25T15:04:34 IST" duration-ms="181446">
+  <suite started-at="2024-02-25T19:27:50 IST" name="Failed suite [Suite]" finished-at="2024-02-25T19:27:56 IST" duration-ms="5892">
     <groups>
     </groups>
-    <test started-at="2024-02-25T15:01:32 IST" name="Test1" finished-at="2024-02-25T15:04:34 IST" duration-ms="181446">
-      <class name="testCases.TC003_CarDetails">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC003_CarDetails@9597028]" started-at="2024-02-25T15:01:51 IST" name="initializeBrowser" finished-at="2024-02-25T15:01:54 IST" duration-ms="2439" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="testCarDetails()[pri:0, instance:testCases.TC003_CarDetails@9597028]" started-at="2024-02-25T15:01:54 IST" name="testCarDetails" finished-at="2024-02-25T15:01:58 IST" duration-ms="3789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCarDetails -->
-        <test-method signature="testWriteCarDetails()[pri:1, instance:testCases.TC003_CarDetails@9597028]" started-at="2024-02-25T15:01:58 IST" name="testWriteCarDetails" finished-at="2024-02-25T15:01:58 IST" duration-ms="931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWriteCarDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC003_CarDetails@9597028]" started-at="2024-02-25T15:01:58 IST" name="closeBrowser" finished-at="2024-02-25T15:01:59 IST" duration-ms="459" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC003_CarDetails -->
+    <test started-at="2024-02-25T19:27:50 IST" name=" Edge Test(failed)" finished-at="2024-02-25T19:27:56 IST" duration-ms="5892">
       <class name="testCases.TC005_UsedCarDetails">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC005_UsedCarDetails@59662a0b]" started-at="2024-02-25T15:02:41 IST" name="initializeBrowser" finished-at="2024-02-25T15:02:44 IST" duration-ms="2401" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC005_UsedCarDetails@436813f3]" started-at="2024-02-25T19:27:50 IST" name="initializeBrowser" finished-at="2024-02-25T19:27:56 IST" duration-ms="5542" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="testUsedCars()[pri:0, instance:testCases.TC005_UsedCarDetails@59662a0b]" started-at="2024-02-25T15:02:44 IST" name="testUsedCars" finished-at="2024-02-25T15:02:48 IST" duration-ms="4032" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUsedCars -->
-        <test-method signature="testWritePopularCarModel()[pri:1, instance:testCases.TC005_UsedCarDetails@59662a0b]" started-at="2024-02-25T15:02:48 IST" name="testWritePopularCarModel" finished-at="2024-02-25T15:02:48 IST" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWritePopularCarModel -->
-        <test-method signature="testWriteAllPopularCarModelDetails()[pri:2, instance:testCases.TC005_UsedCarDetails@59662a0b]" started-at="2024-02-25T15:02:48 IST" name="testWriteAllPopularCarModelDetails" finished-at="2024-02-25T15:04:33 IST" duration-ms="105343" status="PASS">
+        <test-method signature="testWriteAllPopularCarModelDetails()[pri:2, instance:testCases.TC005_UsedCarDetails@436813f3]" started-at="2024-02-25T19:27:56 IST" name="testWriteAllPopularCarModelDetails" finished-at="2024-02-25T19:27:56 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "pageObjects.UsedCarPage.getAllPopularCarModelDetails()" because "this.usedcar" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "pageObjects.UsedCarPage.getAllPopularCarModelDetails()" because "this.usedcar" is null
+at testCases.TC005_UsedCarDetails.testWriteAllPopularCarModelDetails(TC005_UsedCarDetails.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWriteAllPopularCarModelDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC005_UsedCarDetails@59662a0b]" started-at="2024-02-25T15:04:33 IST" name="closeBrowser" finished-at="2024-02-25T15:04:34 IST" duration-ms="617" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC005_UsedCarDetails@436813f3]" started-at="2024-02-25T19:27:56 IST" name="closeBrowser" finished-at="2024-02-25T19:27:56 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testCases.TC005_UsedCarDetails -->
-      <class name="testCases.TC001_InvalidGoogleLogin">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC001_InvalidGoogleLogin@2b662a77]" started-at="2024-02-25T15:01:32 IST" name="initializeBrowser" finished-at="2024-02-25T15:01:36 IST" duration-ms="3656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="testInvalidGoogleLogin()[pri:0, instance:testCases.TC001_InvalidGoogleLogin@2b662a77]" started-at="2024-02-25T15:01:36 IST" name="testInvalidGoogleLogin" finished-at="2024-02-25T15:01:41 IST" duration-ms="5333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidGoogleLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC001_InvalidGoogleLogin@2b662a77]" started-at="2024-02-25T15:01:41 IST" name="closeBrowser" finished-at="2024-02-25T15:01:42 IST" duration-ms="617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC001_InvalidGoogleLogin -->
-      <class name="testCases.TC004_HealthInsurance">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC004_HealthInsurance@1b7cc17c]" started-at="2024-02-25T15:01:59 IST" name="initializeBrowser" finished-at="2024-02-25T15:02:01 IST" duration-ms="2417" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="testHealthInsurance()[pri:0, instance:testCases.TC004_HealthInsurance@1b7cc17c]" started-at="2024-02-25T15:02:01 IST" name="testHealthInsurance" finished-at="2024-02-25T15:02:25 IST" duration-ms="24089" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHealthInsurance -->
-        <test-method signature="testWriteHealthInsuranceBrandName()[pri:1, instance:testCases.TC004_HealthInsurance@1b7cc17c]" started-at="2024-02-25T15:02:25 IST" name="testWriteHealthInsuranceBrandName" finished-at="2024-02-25T15:02:41 IST" duration-ms="15231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWriteHealthInsuranceBrandName -->
-        <test-method signature="testWriteHealthInsurancePlan()[pri:2, instance:testCases.TC004_HealthInsurance@1b7cc17c]" started-at="2024-02-25T15:02:41 IST" name="testWriteHealthInsurancePlan" finished-at="2024-02-25T15:02:41 IST" duration-ms="198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWriteHealthInsurancePlan -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC004_HealthInsurance@1b7cc17c]" started-at="2024-02-25T15:02:41 IST" name="closeBrowser" finished-at="2024-02-25T15:02:41 IST" duration-ms="489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC004_HealthInsurance -->
-      <class name="testCases.TC002_BikeDetails">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC002_BikeDetails@49139829]" started-at="2024-02-25T15:01:42 IST" name="initializeBrowser" finished-at="2024-02-25T15:01:45 IST" duration-ms="2539" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="testBikeDetails()[pri:0, instance:testCases.TC002_BikeDetails@49139829]" started-at="2024-02-25T15:01:45 IST" name="testBikeDetails" finished-at="2024-02-25T15:01:48 IST" duration-ms="3064" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBikeDetails -->
-        <test-method signature="testWriteBikeDetails()[pri:1, instance:testCases.TC002_BikeDetails@49139829]" started-at="2024-02-25T15:01:48 IST" name="testWriteBikeDetails" finished-at="2024-02-25T15:01:51 IST" duration-ms="3071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWriteBikeDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC002_BikeDetails@49139829]" started-at="2024-02-25T15:01:51 IST" name="closeBrowser" finished-at="2024-02-25T15:01:51 IST" duration-ms="514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC002_BikeDetails -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite -->
+    </test> <!--  Edge Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>

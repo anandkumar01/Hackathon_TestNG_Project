@@ -2,6 +2,7 @@ package factory;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	protected WebDriver driver;
@@ -17,28 +21,37 @@ public class BaseClass {
 
 	@BeforeClass()
 	@Parameters({ "browser" })
-	public WebDriver initializeBrowser(String browser) throws IOException {
+	public WebDriver initializeBrowser(@Optional("Edge") String browser) throws IOException {
 
-		if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {
+		try {
+			if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {
 
-			switch (browser) {
-			case "chrome":
-				driver = new ChromeDriver();
-				break;
-			case "edge":
-				driver = new EdgeDriver();
-				break;
-			default:
-				System.out.println("No matching browser");
-				driver = null;
+				switch (browser.toLowerCase()) {
+				case "chrome":
+					WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver();
+					break;
+				case "edge":
+					WebDriverManager.edgedriver().setup();
+					driver = new EdgeDriver();
+					break;
+				default:
+					System.out.println("No matching browser");
+					driver = null;
+				}
 			}
-		}
 
-		if (driver != null) {
-			System.out.println("Starting the browser session..");
-			driver.manage().deleteAllCookies();
-			driver.get(property.getProperty("baseUrl"));
-			driver.manage().window().maximize();
+			if (driver != null) {
+				System.out.println("Starting the browser session..");
+				driver.manage().deleteAllCookies();
+				driver.get(property.getProperty("baseUrl"));
+				driver.manage().window().maximize();
+				driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+			}
+
+		} catch (Exception e) {
+			System.err.println("Error during browser initialization: " + e.getMessage());
+			e.printStackTrace();
 		}
 		return driver;
 	}
