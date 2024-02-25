@@ -76,8 +76,8 @@ public class HealthInsurancePage extends BasePage {
 	@FindBy(xpath = "//div[starts-with(@class, 'quotesListWrapper')]/div/div/div[2]/div/div[2]/div[2]/div//button/span")
 	List<WebElement> insuranceplan;
 
-	@FindBy(xpath = "//div[@class='viewMorePlan']")
-	List<WebElement> allscroll;
+	@FindBy(xpath = "//div[@class='disclaimer']")
+	WebElement disclaimerscroll;
 
 	public void hoverMore() {
 		zigwheels.click();
@@ -105,6 +105,7 @@ public class HealthInsurancePage extends BasePage {
 		continuebtn.click();
 
 		clickage.click();
+		explicitWait(selectage);
 		selectage.click();
 		inputpincode.sendKeys("603103");
 		explicitWait(continueBtn);
@@ -119,8 +120,9 @@ public class HealthInsurancePage extends BasePage {
 	}
 
 	public List<String> getHealthInsuranceBrandName() throws InterruptedException {
+		scrollToElement(disclaimerscroll);
+		Thread.sleep(15000);
 		brandName.clear();
-		Thread.sleep(25000);
 		for (WebElement ele : brandname) {
 			String brand = ele.getText();
 			brandName.add(brand);

@@ -3,20 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.TC002_CarDetails">
+      <class name="testCases.TC005_UsedCarDetails">
         <methods>
           <include name="initializeBrowser"/>
           <include name="closeBrowser"/>
-          <include name="testCarDetails"/>
+          <include name="testWriteAllPopularCarModelDetails"/>
         </methods>
-      </class> <!-- testCases.TC002_CarDetails -->
-      <class name="testCases.TC003_HealthInsurance">
+      </class> <!-- testCases.TC005_UsedCarDetails -->
+      <class name="testCases.TC001_InvalidGoogleLogin">
         <methods>
           <include name="initializeBrowser"/>
           <include name="closeBrowser"/>
-          <include name="testHealthInsurance"/>
+          <include name="testInvalidGoogleLogin"/>
         </methods>
-      </class> <!-- testCases.TC003_HealthInsurance -->
+      </class> <!-- testCases.TC001_InvalidGoogleLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
