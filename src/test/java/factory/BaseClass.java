@@ -9,15 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	protected WebDriver driver;
 	protected Properties property;
 
-	@BeforeClass
-	public WebDriver initializeBrowser() throws IOException {
+	@BeforeClass()
+	@Parameters({ "browser" })
+	public WebDriver initializeBrowser(String browser) throws IOException {
+
 		if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {
-			String browser = getProperties().getProperty("browser").toLowerCase();
 
 			switch (browser) {
 			case "chrome":
