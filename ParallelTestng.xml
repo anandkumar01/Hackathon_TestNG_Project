@@ -7,8 +7,8 @@
       <class name="testCases.TC001_InvalidGoogleLogin"/>
       <class name="testCases.TC002_BikeDetails"/>
       <class name="testCases.TC003_CarDetails"/>
-      <class name="testCases.TC004_HealthInsurance"/>
-      <class name="testCases.TC005_UsedCarDetails"/>
+      <class name="testCases.TC004_UsedCarDetails"/>
+      <class name="testCases.TC005_HealthInsurance"/>
     </classes>
   </test> <!-- Test -->
   
@@ -18,8 +18,8 @@
       <class name="testCases.TC001_InvalidGoogleLogin"/>
       <class name="testCases.TC002_BikeDetails"/>
       <class name="testCases.TC003_CarDetails"/>
-      <class name="testCases.TC004_HealthInsurance"/>
-      <class name="testCases.TC005_UsedCarDetails"/>
+      <class name="testCases.TC004_UsedCarDetails"/>
+      <class name="testCases.TC005_HealthInsurance"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

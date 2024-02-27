@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -15,13 +17,16 @@ import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass {
+public class CrossBrowsing {
 	protected WebDriver driver;
 	protected Properties property;
+	protected Logger logger;
 
 	@BeforeClass()
 	@Parameters({ "browser" })
 	public WebDriver initializeBrowser(@Optional("Edge") String browser) throws IOException {
+		logger = LogManager.getLogger(this.getClass());
+		logger.info("Setting the driver");
 
 		try {
 			if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {

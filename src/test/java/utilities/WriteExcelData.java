@@ -7,9 +7,9 @@ import java.util.List;
 
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -19,14 +19,14 @@ public class WriteExcelData {
 	public static XSSFSheet bikesheet = workbook.createSheet("BikeDetails");
 	public static XSSFRow headerRow1 = bikesheet.createRow(0);
 
-	public static XSSFSheet carsheet = workbook.createSheet("PopularCarModels");
-	public static XSSFRow headerRow2 = carsheet.createRow(0);
-
 	public static XSSFSheet carSheet = workbook.createSheet("CarDetails");
-	public static XSSFRow headerRow3 = carSheet.createRow(0);
+	public static XSSFRow headerRow2 = carSheet.createRow(0);
 
 	public static XSSFSheet healthSheet = workbook.createSheet("HealthInsurance");
-	public static XSSFRow headerRow4 = healthSheet.createRow(0);
+	public static XSSFRow headerRow3 = healthSheet.createRow(0);
+
+	public static XSSFSheet modelsheet = workbook.createSheet("PopularCarModels");
+	public static XSSFRow headerRow4 = modelsheet.createRow(0);
 
 	// Created a method to set the style of top row for Headings
 	private static void setHeaderStyle(XSSFRow headerRow, int colIndex, String headerName) {
@@ -34,7 +34,7 @@ public class WriteExcelData {
 		style.setFillBackgroundColor(IndexedColors.GREEN.getIndex());
 		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
 
-		XSSFFont font = workbook.createFont();
+		Font font = workbook.createFont();
 		font.setColor(IndexedColors.WHITE.getIndex());
 		style.setFont(font);
 
@@ -82,48 +82,14 @@ public class WriteExcelData {
 		}
 	}
 
-	// This method will write all car models in PopularCarModels sheet
-	public static void writePopularCarModel(List<String> carModels, String filePath) {
-		try {
-			headerRow2 = carsheet.getRow(0);
-
-			setHeaderStyle(headerRow2, 0, "Popular Car Model");
-
-			for (int i = 0; i < carModels.size(); i++) {
-				XSSFRow row = carsheet.getRow(i + 1);
-
-				// if row doesn't exist, create a new one
-				if (row == null) {
-					row = carsheet.createRow(i + 1);
-				}
-
-				// use cell index 0 to write in the first column
-				row.createCell(0).setCellValue(carModels.get(i));
-			}
-
-			// Auto-fit column width implementation
-			for (int i = 0; i < headerRow2.getLastCellNum(); i++) {
-				carsheet.autoSizeColumn(i);
-			}
-
-			// writing data in the excel sheet
-			try (FileOutputStream fileOut = new FileOutputStream(filePath)) {
-				workbook.write(fileOut);
-			}
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
 	// This method will write all upcoming car details in CarDetails sheet
 	public static void writeCarDetails(LinkedHashMap<String, List<String>> carDetails, String filePath) {
 		try {
-			headerRow3 = carSheet.getRow(0);
+			headerRow2 = carSheet.getRow(0);
 
-			setHeaderStyle(headerRow3, 0, "Car Name");
-			setHeaderStyle(headerRow3, 1, "Car Price");
-			setHeaderStyle(headerRow3, 2, "Launch Date");
+			setHeaderStyle(headerRow2, 0, "Car Name");
+			setHeaderStyle(headerRow2, 1, "Car Price");
+			setHeaderStyle(headerRow2, 2, "Launch Date");
 
 			int rowNum = 1;
 			for (List<String> detailsList : carDetails.values()) {
@@ -142,7 +108,7 @@ public class WriteExcelData {
 			}
 
 			// Auto-fit column width implementation
-			for (int i = 0; i < headerRow3.getLastCellNum(); i++) {
+			for (int i = 0; i < headerRow2.getLastCellNum(); i++) {
 				carSheet.autoSizeColumn(i);
 			}
 
@@ -159,9 +125,9 @@ public class WriteExcelData {
 	// This method will write all Health insurance brand name in HealthInsurance
 	public static void writeHealthInsuranceBrandName(List<String> insuranceBrandName, String filePath) {
 		try {
-			headerRow4 = healthSheet.getRow(0);
+			headerRow3 = healthSheet.getRow(0);
 
-			setHeaderStyle(headerRow4, 0, "Health Insurance Brand Name");
+			setHeaderStyle(headerRow3, 0, "Health Insurance Brand Name");
 
 			for (int i = 0; i < insuranceBrandName.size(); i++) {
 				XSSFRow row = healthSheet.getRow(i + 1);
@@ -176,7 +142,7 @@ public class WriteExcelData {
 			}
 
 			// Auto-fit column width implementation
-			for (int i = 0; i < headerRow4.getLastCellNum(); i++) {
+			for (int i = 0; i < headerRow3.getLastCellNum(); i++) {
 				healthSheet.autoSizeColumn(i);
 			}
 
@@ -193,9 +159,9 @@ public class WriteExcelData {
 	// This method will write all Health insurance plan in HealthInsurance
 	public static void writeHealthInsurancePlan(List<String> insurancePlan, String filePath) {
 		try {
-			headerRow4 = healthSheet.getRow(0);
+			headerRow3 = healthSheet.getRow(0);
 
-			setHeaderStyle(headerRow4, 1, "Health Insurance Plan");
+			setHeaderStyle(headerRow3, 1, "Health Insurance Plan");
 
 			for (int i = 0; i < insurancePlan.size(); i++) {
 				XSSFRow row = healthSheet.getRow(i + 1);
@@ -210,8 +176,42 @@ public class WriteExcelData {
 			}
 
 			// Auto-fit column width implementation
-			for (int i = 0; i < headerRow4.getLastCellNum(); i++) {
+			for (int i = 0; i < headerRow3.getLastCellNum(); i++) {
 				healthSheet.autoSizeColumn(i);
+			}
+
+			// writing data in the excel sheet
+			try (FileOutputStream fileOut = new FileOutputStream(filePath)) {
+				workbook.write(fileOut);
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	// This method will write all car models in PopularCarModels sheet
+	public static void writePopularCarModel(List<String> carModels, String filePath) {
+		try {
+			headerRow4 = modelsheet.getRow(0);
+
+			setHeaderStyle(headerRow4, 0, "Popular Car Model");
+
+			for (int i = 0; i < carModels.size(); i++) {
+				XSSFRow row = modelsheet.getRow(i + 1);
+
+				// if row doesn't exist, create a new one
+				if (row == null) {
+					row = modelsheet.createRow(i + 1);
+				}
+
+				// use cell index 0 to write in the first column
+				row.createCell(0).setCellValue(carModels.get(i));
+			}
+
+			// Auto-fit column width implementation
+			for (int i = 0; i < headerRow4.getLastCellNum(); i++) {
+				modelsheet.autoSizeColumn(i);
 			}
 
 			// writing data in the excel sheet

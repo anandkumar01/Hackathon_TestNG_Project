@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
-import factory.BaseClass;
+import factory.CrossBrowsing;
 import pageObjects.UsedCarPage;
 import utilities.WriteExcelData;
 
-public class TC005_UsedCarDetails extends BaseClass {
+public class TC005_UsedCarDetails extends CrossBrowsing {
 	UsedCarPage usedcar;
 	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 	List<String> carModels;

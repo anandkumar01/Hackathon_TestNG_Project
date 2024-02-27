@@ -5,11 +5,11 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
-import factory.BaseClass;
+import factory.CrossBrowsing;
 import pageObjects.HealthInsurancePage;
 import utilities.WriteExcelData;
 
-public class TC004_HealthInsurance extends BaseClass {
+public class TC004_HealthInsurance extends CrossBrowsing {
 	HealthInsurancePage health;
 	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 

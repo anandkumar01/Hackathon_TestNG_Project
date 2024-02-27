@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" Edge Test(failed)(failed)">
-    <parameter name="browser" value="Edge"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testCases.TC005_UsedCarDetails">
+      <class name="testCases.TC001_InvalidGoogleLogin">
         <methods>
+          <include name="testInvalidGoogleLogin"/>
+          <include name="closeBrowser"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- testCases.TC001_InvalidGoogleLogin -->
+      <class name="testCases.TC005_HealthInsurance">
+        <methods>
+          <include name="testHealthInsurance"/>
           <include name="initializeBrowser"/>
           <include name="closeBrowser"/>
-          <include name="testWriteAllPopularCarModelDetails"/>
         </methods>
-      </class> <!-- testCases.TC005_UsedCarDetails -->
+      </class> <!-- testCases.TC005_HealthInsurance -->
     </classes>
-  </test> <!--  Edge Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
