@@ -3,12 +3,14 @@ package pageObjects;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HealthInsurancePage extends BasePage {
+	Properties property;
 
 	public HealthInsurancePage(WebDriver driver) {
 		super(driver);
@@ -94,8 +96,8 @@ public class HealthInsurancePage extends BasePage {
 		explicitWait(scroll);
 		scrollToElement(scroll);
 		checkmale.click();
-		inputname.sendKeys("Anand");
-		inputphone.sendKeys("9876543210");
+		inputname.sendKeys(property.getProperty("name"));
+		inputphone.sendKeys(property.getProperty("phone"));
 
 		Thread.sleep(2000);
 		viewplan.click();
@@ -107,7 +109,7 @@ public class HealthInsurancePage extends BasePage {
 		clickage.click();
 		explicitWait(selectage);
 		selectage.click();
-		inputpincode.sendKeys("603103");
+		inputpincode.sendKeys(property.getProperty("pincode"));
 		explicitWait(continueBtn);
 		continueBtn.click();
 

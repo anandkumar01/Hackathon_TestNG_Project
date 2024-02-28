@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class BikeDetailsPage extends BasePage {
+	Properties property;
 
 	public BikeDetailsPage(WebDriver driver) {
 		super(driver);
@@ -66,7 +68,7 @@ public class BikeDetailsPage extends BasePage {
 
 	public void selectManufacturer() {
 		Select select = new Select(selectmanufacturer);
-		select.selectByVisibleText("Honda");
+		select.selectByVisibleText(property.getProperty("bikemanufacturer"));
 		captureFullPageScreenshot(driver, filepath);
 	}
 
@@ -146,13 +148,13 @@ public class BikeDetailsPage extends BasePage {
 		}
 	}
 
-	public void validateHondaBikes() {
+	public void validateAllBikes() {
 		explicitWait(bikeheading);
 		boolean heading = bikeheading.isDisplayed();
 		if (heading) {
-			System.out.println("All upcoming Honda Bikes are displayed successfully..");
+			System.out.println("All upcoming bikes are displayed successfully..");
 		} else {
-			System.out.println("All upcoming Honda Bikes are not visible..");
+			System.out.println("All upcoming bikes are not visible..");
 		}
 	}
 

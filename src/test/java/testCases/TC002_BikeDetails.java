@@ -48,7 +48,7 @@ public class TC002_BikeDetails extends CrossBrowsing {
 		bike.hoverNewBikes();
 		bike.checkUpcomingBikes();
 		bike.clickUpcomingBikes();
-		bike.validateHondaBikes();
+		bike.validateAllBikes();
 
 	}
 }

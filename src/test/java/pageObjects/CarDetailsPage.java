@@ -3,6 +3,7 @@ package pageObjects;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class CarDetailsPage extends BasePage {
+	Properties property;
 
 	public CarDetailsPage(WebDriver driver) {
 		super(driver);
@@ -57,7 +59,6 @@ public class CarDetailsPage extends BasePage {
 	public void hoverNewCars() {
 		zigwheels.click();
 		explicitWait(newcars);
-		hoverOnElement(newcars);
 	}
 
 	public void clickUpcomingCars() {
@@ -66,7 +67,7 @@ public class CarDetailsPage extends BasePage {
 
 	public void selectManufacturer() {
 		Select select = new Select(selectmanufacturer);
-		select.selectByVisibleText("Tata");
+		select.selectByVisibleText(property.getProperty("carmanufacturer"));
 	}
 
 	public void clickToViewMore() {
@@ -132,13 +133,13 @@ public class CarDetailsPage extends BasePage {
 		}
 	}
 
-	public void validateTataCars() {
+	public void validateAllCars() {
 		explicitWait(carheading);
 		boolean heading = carheading.isDisplayed();
 		if (heading) {
-			System.out.println("All upcoming Tata Cars are displayed successfully..");
+			System.out.println("All upcoming cars are displayed successfully..");
 		} else {
-			System.out.println("All upcoming Tata Cars are not visible..");
+			System.out.println("All upcoming cars are not visible..");
 		}
 	}
 

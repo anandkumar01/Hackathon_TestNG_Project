@@ -47,7 +47,7 @@ public class TC003_CarDetails extends CrossBrowsing {
 		car.hoverNewCars();
 		car.checkUpcomingCars();
 		car.clickUpcomingCars();
-		car.validateTataCars();
+		car.validateAllCars();
 	}
 
 }
