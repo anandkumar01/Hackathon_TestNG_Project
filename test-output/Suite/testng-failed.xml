@@ -3,21 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Chrome Test(failed)">
     <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="testCases.TC001_InvalidGoogleLogin">
         <methods>
-          <include name="testInvalidGoogleLogin"/>
+          <include name="smokeInvalidGoogleLogin"/>
           <include name="closeBrowser"/>
           <include name="initializeBrowser"/>
         </methods>
       </class> <!-- testCases.TC001_InvalidGoogleLogin -->
-      <class name="testCases.TC005_HealthInsurance">
-        <methods>
-          <include name="testHealthInsurance"/>
-          <include name="initializeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC005_HealthInsurance -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

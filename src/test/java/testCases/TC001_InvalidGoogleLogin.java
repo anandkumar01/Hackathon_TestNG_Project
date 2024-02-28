@@ -8,7 +8,7 @@ import pageObjects.InvalidGoogleLoginPage;
 public class TC001_InvalidGoogleLogin extends CrossBrowsing {
 	InvalidGoogleLoginPage login;
 
-	@Test
+	@Test(groups = { "regression", "sanity" })
 	public void testInvalidGoogleLogin() {
 		login = new InvalidGoogleLoginPage(driver);
 
@@ -23,6 +23,14 @@ public class TC001_InvalidGoogleLogin extends CrossBrowsing {
 
 		logger.info("Error message printed");
 		login.printErrorMessage();
+	}
+
+	@Test(groups = { "smoke" })
+	public void smokeInvalidGoogleLogin() {
+		login = new InvalidGoogleLoginPage(driver);
+		login.checkLoginButton();
+		login.clickLoginButton();
+		login.checkGoogleOption();
 	}
 
 }

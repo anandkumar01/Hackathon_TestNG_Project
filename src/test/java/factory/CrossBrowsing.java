@@ -22,7 +22,7 @@ public class CrossBrowsing {
 	protected Properties property;
 	protected Logger logger;
 
-	@BeforeClass()
+	@BeforeClass(groups = { "smoke" })
 	@Parameters({ "browser" })
 	public WebDriver initializeBrowser(@Optional("Edge") String browser) throws IOException {
 		logger = LogManager.getLogger(this.getClass());
@@ -47,7 +47,7 @@ public class CrossBrowsing {
 			}
 
 			if (driver != null) {
-				System.out.println("Starting the browser session..");
+				System.out.println("\nStarting the browser session..\n");
 				driver.manage().deleteAllCookies();
 				driver.get(property.getProperty("baseUrl"));
 				driver.manage().window().maximize();
@@ -61,10 +61,10 @@ public class CrossBrowsing {
 		return driver;
 	}
 
-	@AfterClass
+	@AfterClass(groups = { "smoke" })
 	public void closeBrowser() {
 		if (driver != null) {
-			System.out.println("Closing the browser session..");
+			System.out.println("\nClosing the browser session..");
 			driver.quit();
 		}
 	}

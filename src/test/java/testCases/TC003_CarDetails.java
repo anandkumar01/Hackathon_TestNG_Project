@@ -14,7 +14,7 @@ public class TC003_CarDetails extends CrossBrowsing {
 	CarDetailsPage car;
 	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "sanity" })
 	public void testCarDetails() throws IOException {
 		car = new CarDetailsPage(driver);
 
@@ -34,10 +34,20 @@ public class TC003_CarDetails extends CrossBrowsing {
 		car.printUpcomingCarDetails();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "sanity" })
 	public void testWriteCarDetails() {
 		LinkedHashMap<String, List<String>> carDetailsMap = car.getUpcomingCarDetails();
 		WriteExcelData.writeCarDetails(carDetailsMap, filepath);
+	}
+
+	@Test(groups = { "smoke" })
+	public void smokeCarDetails() {
+		car = new CarDetailsPage(driver);
+		car.checkNewCars();
+		car.hoverNewCars();
+		car.checkUpcomingCars();
+		car.clickUpcomingCars();
+		car.validateTataCars();
 	}
 
 }

@@ -14,7 +14,7 @@ public class TC002_BikeDetails extends CrossBrowsing {
 	BikeDetailsPage bike;
 	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "sanity" })
 	public void testBikeDetails() throws IOException {
 		// Pass the WebDriver instance to the BikeDetailsPage constructor
 		bike = new BikeDetailsPage(driver);
@@ -35,9 +35,20 @@ public class TC002_BikeDetails extends CrossBrowsing {
 		bike.printUpcomingBikeDetails();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "sanity" })
 	public void testWriteBikeDetails() {
 		LinkedHashMap<String, List<String>> bikeDetailsMap = bike.getUpcomingBikeDetails();
 		WriteExcelData.writeBikeDetails(bikeDetailsMap, filepath);
+	}
+
+	@Test(groups = { "smoke" })
+	public void smokeBikeDetails() {
+		bike = new BikeDetailsPage(driver);
+		bike.zigwheelspage();
+		bike.hoverNewBikes();
+		bike.checkUpcomingBikes();
+		bike.clickUpcomingBikes();
+		bike.validateHondaBikes();
+
 	}
 }

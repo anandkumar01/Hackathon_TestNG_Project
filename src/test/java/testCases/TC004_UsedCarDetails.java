@@ -13,7 +13,7 @@ public class TC004_UsedCarDetails extends CrossBrowsing {
 	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 	List<String> carModels;
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "regression", "sanity" })
 	public void testUsedCars() throws InterruptedException {
 		usedcar = new UsedCarPage(driver);
 
@@ -33,17 +33,26 @@ public class TC004_UsedCarDetails extends CrossBrowsing {
 		usedcar.printAllPopularCarModelDetails();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "regression", "sanity" })
 	public void testWritePopularCarModel() {
 		logger.info("Written popular car model names in excel sheet");
 		carModels = usedcar.getPopularCarModels();
 		WriteExcelData.writePopularCarModel(carModels, filepath);
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = { "regression", "sanity" })
 	public void testWriteAllPopularCarModelDetails() throws InterruptedException {
 		logger.info("Written all popular car model details in excel sheet");
 		List<List<List<String>>> allPopularCarModelDetails = usedcar.getAllPopularCarModelDetails();
 		WriteExcelData.writeAllPopularCarModelDetails(allPopularCarModelDetails, carModels, filepath);
+	}
+
+	@Test(groups = { "smoke" })
+	public void smokePopularCarModel() {
+		usedcar = new UsedCarPage(driver);
+		usedcar.hoverUsedCars();
+		usedcar.checkChennaiCity();
+		usedcar.clickChennai();
+		usedcar.validateUsedCarsForChennai();
 	}
 }

@@ -132,7 +132,7 @@ public class CarDetailsPage extends BasePage {
 		}
 	}
 
-	public void validateHondaCars() {
+	public void validateTataCars() {
 		explicitWait(carheading);
 		boolean heading = carheading.isDisplayed();
 		if (heading) {

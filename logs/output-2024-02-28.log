@@ -1,0 +1,51 @@
+13:36:58.100 [main] INFO  testCases.TC004_UsedCarDetails - Setting the driver
+13:37:06.093 [main] INFO  testCases.TC004_UsedCarDetails - Hover on Used Cars
+13:37:10.047 [main] INFO  testCases.TC004_UsedCarDetails - Clicked Chennai
+13:37:36.100 [main] INFO  testCases.TC004_UsedCarDetails - Scrolled to popular model
+13:37:36.157 [main] INFO  testCases.TC004_UsedCarDetails - Printed popular car model names
+13:37:36.494 [main] INFO  testCases.TC004_UsedCarDetails - Printed all popular car model details
+13:37:36.507 [main] INFO  testCases.TC004_UsedCarDetails - Written popular car model names in excel sheet
+13:37:36.791 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+13:37:36.795 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+13:37:36.799 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+13:37:36.800 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+13:37:36.803 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+13:37:36.803 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+13:37:36.804 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+13:37:36.807 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+13:37:36.807 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+13:37:36.808 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+13:37:36.809 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet4.xml'
+13:37:36.817 [main] INFO  testCases.TC004_UsedCarDetails - Written all popular car model details in excel sheet
+13:41:32.195 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+13:41:32.201 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+13:41:32.205 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+13:41:32.205 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+13:41:32.208 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+13:41:32.210 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+13:41:32.211 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+13:41:32.226 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+13:41:32.229 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+13:41:32.246 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+13:41:32.247 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet4.xml'
+13:41:32.248 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet5.xml'
+13:41:32.249 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet6.xml'
+13:41:32.250 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet7.xml'
+13:41:32.252 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet8.xml'
+13:41:32.253 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet9.xml'
+13:41:32.254 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet10.xml'
+13:41:32.256 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet11.xml'
+13:41:32.257 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet12.xml'
+13:41:32.258 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet13.xml'
+13:41:34.174 [main] INFO  testCases.TC005_HealthInsurance - Setting the driver
+13:41:45.762 [main] INFO  testCases.TC005_HealthInsurance - Hover More
+13:41:50.411 [main] INFO  testCases.TC005_HealthInsurance - Clicked Health Insurance
+13:42:16.029 [main] INFO  testCases.TC005_HealthInsurance - Filled Health Insurance basic details
+13:42:25.343 [main] INFO  testCases.TC005_HealthInsurance - Printed Health Insurance brand names
+13:42:47.787 [main] INFO  testCases.TC005_HealthInsurance - Printed Health Insurance plan
+13:42:48.037 [main] INFO  testCases.TC005_HealthInsurance - Written Health Insurance brand name in excel sheet
+13:43:03.493 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+13:43:03.498 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+13:43:03.502 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+13:43:03.503 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+13:43:03.506 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'

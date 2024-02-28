@@ -13,7 +13,7 @@ public class TC005_HealthInsurance extends CrossBrowsing {
 	HealthInsurancePage health;
 	String filepath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.xlsx";
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "regression", "sanity" })
 	public void testHealthInsurance() throws IOException, InterruptedException {
 		health = new HealthInsurancePage(driver);
 
@@ -33,17 +33,24 @@ public class TC005_HealthInsurance extends CrossBrowsing {
 		health.printInsurancePlan();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "regression", "sanity" })
 	public void testWriteHealthInsuranceBrandName() throws InterruptedException {
 		logger.info("Written Health Insurance brand name in excel sheet");
 		List<String> insuranceBrandName = health.getHealthInsuranceBrandName();
 		WriteExcelData.writeHealthInsuranceBrandName(insuranceBrandName, filepath);
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = { "regression", "sanity" })
 	public void testWriteHealthInsurancePlan() {
 		logger.info("Written Health Insurance plan in excel sheet");
 		List<String> insurancePlan = health.getInsurancePlan();
 		WriteExcelData.writeHealthInsurancePlan(insurancePlan, filepath);
+	}
+
+	@Test(groups = { "smoke" })
+	public void smokeHealthInsurance() {
+		health = new HealthInsurancePage(driver);
+		health.hoverMore();
+		health.checkHealthInsurance();
 	}
 }

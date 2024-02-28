@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testHealthInsurance">testHealthInsurance</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_InvalidGoogleLogin" class="method navigator-link" hash-for-method="testInvalidGoogleLogin">testInvalidGoogleLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_InvalidGoogleLogin" class="method navigator-link" hash-for-method="smokeInvalidGoogleLogin">smokeInvalidGoogleLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,47 +117,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_BikeDetails" class="method navigator-link" hash-for-method="testBikeDetails">testBikeDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_BikeDetails" class="method navigator-link" hash-for-method="smokeBikeDetails">smokeBikeDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_CarDetails" class="method navigator-link" hash-for-method="testCarDetails">testCarDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_CarDetails" class="method navigator-link" hash-for-method="smokeCarDetails">smokeCarDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="testUsedCars">testUsedCars</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="smokeHealthInsurance">smokeHealthInsurance</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="testWriteAllPopularCarModelDetails">testWriteAllPopularCarModelDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_BikeDetails" class="method navigator-link" hash-for-method="testWriteBikeDetails">testWriteBikeDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_CarDetails" class="method navigator-link" hash-for-method="testWriteCarDetails">testWriteCarDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testWriteHealthInsuranceBrandName">testWriteHealthInsuranceBrandName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testWriteHealthInsurancePlan">testWriteHealthInsurancePlan</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="testWritePopularCarModel">testWritePopularCarModel</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="smokePopularCarModel">smokePopularCarModel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -185,25 +155,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testInvalidGoogleLogin">
-                  </a> <!-- testInvalidGoogleLogin -->
-                  <span class="method-name">testInvalidGoogleLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for pageObjects.BasePage$$Lambda$683/0x0000000800421000@46e64760 (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.BasePage.explicitWait(BasePage.java:27)
-	at pageObjects.InvalidGoogleLoginPage.printErrorMessage(InvalidGoogleLoginPage.java:67)
-	at testCases.TC001_InvalidGoogleLogin.testInvalidGoogleLogin(TC001_InvalidGoogleLogin.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@jsname=&apos;B34EJ&apos;]/div&quot;}
+                  <a name="smokeInvalidGoogleLogin">
+                  </a> <!-- smokeInvalidGoogleLogin -->
+                  <span class="method-name">smokeInvalidGoogleLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#report_submit_close_login&quot;}
   (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cde1209e96a9ae6f0f6aeb88d518b01c, findElement {value=//div[@jsname=&apos;B34EJ&apos;]/div, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55635}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55635/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cde1209e96a9ae6f0f6aeb88d518b01c
+Command: [ad63b5835b4b3f08c3a260c2ff2f8c12, findElement {value=report_submit_close_login, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57862}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57862/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad63b5835b4b3f08c3a260c2ff2f8c12
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -212,56 +175,13 @@ Session ID: cde1209e96a9ae6f0f6aeb88d518b01c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at pageObjects.BasePage.lambda$0(BasePage.java:27)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 31 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC005_HealthInsurance</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testHealthInsurance">
-                  </a> <!-- testHealthInsurance -->
-                  <span class="method-name">testHealthInsurance</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=120.0.6099.130)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [457ca26c63669df0989035fdc4e37909, clickElement {id=381A17C58981D485B909C33D2C0D2A60_element_168}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61336/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (457ca26c63669df0989035fdc4e37909)] -&gt; xpath: //span[contains(text(), &apos;Health Insurance&apos;)]]
-Session ID: 457ca26c63669df0989035fdc4e37909
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
-	at pageObjects.HealthInsurancePage.clickHealthInsurance(HealthInsurancePage.java:90)
-	at testCases.TC005_HealthInsurance.testHealthInsurance(TC005_HealthInsurance.java:24)
+	at pageObjects.InvalidGoogleLoginPage.checkGoogleOption(InvalidGoogleLoginPage.java:96)
+	at testCases.TC001_InvalidGoogleLogin.smokeInvalidGoogleLogin(TC001_InvalidGoogleLogin.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -275,45 +195,9 @@ Session ID: 457ca26c63669df0989035fdc4e37909
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBikeDetails">
-                  </a> <!-- testBikeDetails -->
-                  <span class="method-name">testBikeDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWriteBikeDetails">
-                  </a> <!-- testWriteBikeDetails -->
-                  <span class="method-name">testWriteBikeDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC004_UsedCarDetails</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUsedCars">
-                  </a> <!-- testUsedCars -->
-                  <span class="method-name">testUsedCars</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWriteAllPopularCarModelDetails">
-                  </a> <!-- testWriteAllPopularCarModelDetails -->
-                  <span class="method-name">testWriteAllPopularCarModelDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWritePopularCarModel">
-                  </a> <!-- testWritePopularCarModel -->
-                  <span class="method-name">testWritePopularCarModel</span>
+                  <a name="smokeBikeDetails">
+                  </a> <!-- smokeBikeDetails -->
+                  <span class="method-name">smokeBikeDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -326,16 +210,24 @@ Session ID: 457ca26c63669df0989035fdc4e37909
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testWriteHealthInsuranceBrandName">
-                  </a> <!-- testWriteHealthInsuranceBrandName -->
-                  <span class="method-name">testWriteHealthInsuranceBrandName</span>
+                  <a name="smokeHealthInsurance">
+                  </a> <!-- smokeHealthInsurance -->
+                  <span class="method-name">smokeHealthInsurance</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC004_UsedCarDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testWriteHealthInsurancePlan">
-                  </a> <!-- testWriteHealthInsurancePlan -->
-                  <span class="method-name">testWriteHealthInsurancePlan</span>
+                  <a name="smokePopularCarModel">
+                  </a> <!-- smokePopularCarModel -->
+                  <span class="method-name">smokePopularCarModel</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -348,16 +240,9 @@ Session ID: 457ca26c63669df0989035fdc4e37909
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCarDetails">
-                  </a> <!-- testCarDetails -->
-                  <span class="method-name">testCarDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWriteCarDetails">
-                  </a> <!-- testWriteCarDetails -->
-                  <span class="method-name">testWriteCarDetails</span>
+                  <a name="smokeCarDetails">
+                  </a> <!-- smokeCarDetails -->
+                  <span class="method-name">smokeCarDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -374,6 +259,11 @@ Session ID: 457ca26c63669df0989035fdc4e37909
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TC001_InvalidGoogleLogin&quot;/&gt;
       &lt;class name=&quot;testCases.TC002_BikeDetails&quot;/&gt;
@@ -403,6 +293,30 @@ Session ID: 457ca26c63669df0989035fdc4e37909
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">smokeBikeDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smokeCarDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smokeHealthInsurance</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smokeInvalidGoogleLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smokePopularCarModel</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -419,56 +333,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testWriteAllPopularCarModelDetails')
-data.setCell(0, 2, 'testCases.TC004_UsedCarDetails')
-data.setCell(0, 3, 116226);
+data.setCell(0, 1, 'smokeCarDetails')
+data.setCell(0, 2, 'testCases.TC003_CarDetails')
+data.setCell(0, 3, 51504);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testHealthInsurance')
-data.setCell(1, 2, 'testCases.TC005_HealthInsurance')
-data.setCell(1, 3, 63324);
+data.setCell(1, 1, 'smokeBikeDetails')
+data.setCell(1, 2, 'testCases.TC002_BikeDetails')
+data.setCell(1, 3, 27018);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testBikeDetails')
-data.setCell(2, 2, 'testCases.TC002_BikeDetails')
-data.setCell(2, 3, 46034);
+data.setCell(2, 1, 'smokePopularCarModel')
+data.setCell(2, 2, 'testCases.TC004_UsedCarDetails')
+data.setCell(2, 3, 19360);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testUsedCars')
-data.setCell(3, 2, 'testCases.TC004_UsedCarDetails')
-data.setCell(3, 3, 37736);
+data.setCell(3, 1, 'smokeHealthInsurance')
+data.setCell(3, 2, 'testCases.TC005_HealthInsurance')
+data.setCell(3, 3, 8206);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testInvalidGoogleLogin')
+data.setCell(4, 1, 'smokeInvalidGoogleLogin')
 data.setCell(4, 2, 'testCases.TC001_InvalidGoogleLogin')
-data.setCell(4, 3, 29870);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testWriteHealthInsuranceBrandName')
-data.setCell(5, 2, 'testCases.TC005_HealthInsurance')
-data.setCell(5, 3, 15184);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCarDetails')
-data.setCell(6, 2, 'testCases.TC003_CarDetails')
-data.setCell(6, 3, 10175);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testWriteBikeDetails')
-data.setCell(7, 2, 'testCases.TC002_BikeDetails')
-data.setCell(7, 3, 4161);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testWriteCarDetails')
-data.setCell(8, 2, 'testCases.TC003_CarDetails')
-data.setCell(8, 3, 2140);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testWritePopularCarModel')
-data.setCell(9, 2, 'testCases.TC004_UsedCarDetails')
-data.setCell(9, 3, 345);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testWriteHealthInsurancePlan')
-data.setCell(10, 2, 'testCases.TC005_HealthInsurance')
-data.setCell(10, 3, 155);
+data.setCell(4, 3, 1309);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -483,9 +373,56 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC002_BikeDetails</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testBikeDetails</span>
+                <br/>
+                <span class="ignored-method-name">testWriteBikeDetails</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC005_HealthInsurance</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testWriteHealthInsurancePlan</span>
+                <br/>
+                <span class="ignored-method-name">testHealthInsurance</span>
+                <br/>
+                <span class="ignored-method-name">testWriteHealthInsuranceBrandName</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC001_InvalidGoogleLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testInvalidGoogleLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC003_CarDetails</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testCarDetails</span>
+                <br/>
+                <span class="ignored-method-name">testWriteCarDetails</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC004_UsedCarDetails</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testUsedCars</span>
+                <br/>
+                <span class="ignored-method-name">testWriteAllPopularCarModelDetails</span>
+                <br/>
+                <span class="ignored-method-name">testWritePopularCarModel</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -502,98 +439,72 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testInvalidGoogleLogin</span>
-                <span class="method-start">87851 ms</span>
+                <span class="method-name">smokeInvalidGoogleLogin</span>
+                <span class="method-start">15541 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">117736 ms</span>
+                <span class="method-start">16878 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC002_BikeDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">119030 ms</span>
+                <span class="method-start">18232 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testBikeDetails</span>
-                <span class="method-start">125823 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWriteBikeDetails</span>
-                <span class="method-start">171861 ms</span>
+                <span class="method-name">smokeBikeDetails</span>
+                <span class="method-start">28273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">176026 ms</span>
+                <span class="method-start">55294 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC003_CarDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">177304 ms</span>
+                <span class="method-start">56775 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testCarDetails</span>
-                <span class="method-start">182938 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWriteCarDetails</span>
-                <span class="method-start">193116 ms</span>
+                <span class="method-name">smokeCarDetails</span>
+                <span class="method-start">67283 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">195258 ms</span>
+                <span class="method-start">118790 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_UsedCarDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">196543 ms</span>
+                <span class="method-start">120342 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testUsedCars</span>
-                <span class="method-start">234182 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWritePopularCarModel</span>
-                <span class="method-start">271921 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWriteAllPopularCarModelDetails</span>
-                <span class="method-start">272269 ms</span>
+                <span class="method-name">smokePopularCarModel</span>
+                <span class="method-start">133741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">388496 ms</span>
+                <span class="method-start">153103 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC005_HealthInsurance</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">389796 ms</span>
+                <span class="method-start">154749 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testHealthInsurance</span>
-                <span class="method-start">428103 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWriteHealthInsuranceBrandName</span>
-                <span class="method-start">491431 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWriteHealthInsurancePlan</span>
-                <span class="method-start">506618 ms</span>
+                <span class="method-name">smokeHealthInsurance</span>
+                <span class="method-start">167449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">506774 ms</span>
+                <span class="method-start">175658 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
