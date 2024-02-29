@@ -86,7 +86,7 @@ public class UsedCarPage extends BasePage {
 	public void printPopularCarModels() {
 		List<String> carModel = getPopularCarModels();
 
-		System.out.println("\nAll popular car models are displayed below :");
+		System.out.println("All popular car models are displayed below :");
 		for (int i = 0; i < carModel.size(); i++) {
 			System.out.println((i + 1) + ". " + carModel.get(i));
 		}

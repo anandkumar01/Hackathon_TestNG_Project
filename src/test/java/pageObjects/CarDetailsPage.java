@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -10,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+
+import factory.CrossBrowsing;
 
 public class CarDetailsPage extends BasePage {
 	Properties property;
@@ -59,13 +62,15 @@ public class CarDetailsPage extends BasePage {
 	public void hoverNewCars() {
 		zigwheels.click();
 		explicitWait(newcars);
+		hoverOnElement(newcars);
 	}
 
 	public void clickUpcomingCars() {
 		upcomingcar.click();
 	}
 
-	public void selectManufacturer() {
+	public void selectManufacturer() throws IOException {
+		property = new CrossBrowsing().getProperties();
 		Select select = new Select(selectmanufacturer);
 		select.selectByVisibleText(property.getProperty("carmanufacturer"));
 	}

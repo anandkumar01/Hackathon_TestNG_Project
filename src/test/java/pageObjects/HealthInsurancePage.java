@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import factory.CrossBrowsing;
+
 public class HealthInsurancePage extends BasePage {
 	Properties property;
 
@@ -93,6 +95,8 @@ public class HealthInsurancePage extends BasePage {
 	}
 
 	public void fillBasicDetails() throws IOException, InterruptedException {
+		property = new CrossBrowsing().getProperties();
+
 		explicitWait(scroll);
 		scrollToElement(scroll);
 		checkmale.click();
@@ -104,12 +108,14 @@ public class HealthInsurancePage extends BasePage {
 
 		explicitWait(checkyou);
 		checkyou.click();
-		continuebtn.click();
 
+		continuebtn.click();
 		clickage.click();
+
 		explicitWait(selectage);
 		selectage.click();
 		inputpincode.sendKeys(property.getProperty("pincode"));
+
 		explicitWait(continueBtn);
 		continueBtn.click();
 

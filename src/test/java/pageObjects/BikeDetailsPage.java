@@ -13,6 +13,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import factory.CrossBrowsing;
+
 public class BikeDetailsPage extends BasePage {
 	Properties property;
 
@@ -66,9 +68,13 @@ public class BikeDetailsPage extends BasePage {
 		upcomingbike.click();
 	}
 
-	public void selectManufacturer() {
+	public void selectManufacturer() throws IOException {
+		Properties property = new CrossBrowsing().getProperties();
+		explicitWait(selectmanufacturer);
 		Select select = new Select(selectmanufacturer);
-		select.selectByVisibleText(property.getProperty("bikemanufacturer"));
+		String s = property.getProperty("bikemanufacturer");
+		System.out.println(s);
+		select.selectByVisibleText(s);
 		captureFullPageScreenshot(driver, filepath);
 	}
 

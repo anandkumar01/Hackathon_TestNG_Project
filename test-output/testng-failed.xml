@@ -5,45 +5,17 @@
     <parameter name="browser" value="Chrome"/>
     <groups>
       <run>
-        <include name="smoke"/>
+        <include name="sanity"/>
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC002_BikeDetails">
-        <methods>
-          <include name="smokeBikeDetails"/>
-          <include name="initializeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC002_BikeDetails -->
-      <class name="testCases.TC005_HealthInsurance">
-        <methods>
-          <include name="smokeHealthInsurance"/>
-          <include name="closeBrowser"/>
-          <include name="initializeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC005_HealthInsurance -->
-      <class name="testCases.TC001_InvalidGoogleLogin">
-        <methods>
-          <include name="smokeInvalidGoogleLogin"/>
-          <include name="closeBrowser"/>
-          <include name="initializeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC001_InvalidGoogleLogin -->
       <class name="testCases.TC004_UsedCarDetails">
         <methods>
-          <include name="smokePopularCarModel"/>
-          <include name="closeBrowser"/>
           <include name="initializeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="testUsedCars"/>
         </methods>
       </class> <!-- testCases.TC004_UsedCarDetails -->
-      <class name="testCases.TC003_CarDetails">
-        <methods>
-          <include name="smokeCarDetails"/>
-          <include name="closeBrowser"/>
-          <include name="initializeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC003_CarDetails -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

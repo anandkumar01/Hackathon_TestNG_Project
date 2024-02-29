@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.Font;
@@ -42,6 +43,19 @@ public class WriteExcelData {
 		headerRow.getCell(colIndex).setCellStyle(style);
 	}
 
+	// Created a method to set the style of all the content
+	private static void setContentStyle(XSSFRow row) {
+		// create a cell style with yellow fill color
+		CellStyle style = row.getSheet().getWorkbook().createCellStyle();
+		style.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+		// apply the style to the cells in the row
+		for (Cell cell : row) {
+			cell.setCellStyle(style);
+		}
+	}
+
 	// This method will write all upcoming bike details in BikeDetails sheet
 	public static void writeBikeDetails(LinkedHashMap<String, List<String>> bikeDetails, String filePath) {
 		try {
@@ -64,6 +78,9 @@ public class WriteExcelData {
 					} else {
 						cell.setCellValue(detail);
 					}
+
+					// applying color on the content
+					setContentStyle(row);
 				}
 			}
 
@@ -105,6 +122,9 @@ public class WriteExcelData {
 						cell.setCellValue(detail);
 					}
 				}
+
+				// applying color on the content
+				setContentStyle(row);
 			}
 
 			// Auto-fit column width implementation
@@ -139,6 +159,9 @@ public class WriteExcelData {
 
 				// use cell index 0 to write in the first column
 				row.createCell(0).setCellValue(insuranceBrandName.get(i));
+
+				// applying color on the content
+				setContentStyle(row);
 			}
 
 			// Auto-fit column width implementation
@@ -173,6 +196,9 @@ public class WriteExcelData {
 
 				// use cell index 1 to write in the second column
 				row.createCell(1).setCellValue(insurancePlan.get(i));
+
+				// applying color on the content
+				setContentStyle(row);
 			}
 
 			// Auto-fit column width implementation
@@ -207,6 +233,9 @@ public class WriteExcelData {
 
 				// use cell index 0 to write in the first column
 				row.createCell(0).setCellValue(carModels.get(i));
+
+				// applying color on the content
+				setContentStyle(row);
 			}
 
 			// Auto-fit column width implementation
@@ -255,6 +284,9 @@ public class WriteExcelData {
 						XSSFCell cell = row.createCell(j);
 						cell.setCellValue(rowData.get(j));
 					}
+
+					// applying color on the content
+					setContentStyle(row);
 				}
 
 				// Auto-fit column width implementation

@@ -1,0 +1,115 @@
+16:46:26.412 [main] INFO  - Setting the driver
+16:46:36.047 [main] INFO  - Clicked Login button
+16:46:37.089 [main] INFO  - Clicked Google Account
+16:46:38.649 [main] INFO  - Entered random email
+16:46:42.617 [main] INFO  - Error message printed
+16:46:45.008 [main] INFO  - Setting the driver
+16:46:54.292 [main] INFO  - Hover on New Bikes
+16:46:54.673 [main] INFO  - Clicked upcomming bikes
+16:46:57.806 [main] INFO  - Selected manufacturer name
+16:47:01.282 [main] INFO  - Setting the driver
+16:47:07.574 [main] INFO  - Hover on New Cars
+16:47:13.342 [main] INFO  - Clicked upcomming cars
+16:47:13.795 [main] INFO  - Selected manufacturer name
+16:51:34.652 [main] INFO  - Setting the driver
+16:51:41.465 [main] INFO  - Clicked Login button
+16:52:02.367 [main] INFO  - Clicked Google Account
+16:52:03.816 [main] INFO  - Entered random email
+16:52:07.458 [main] INFO  - Error message printed
+16:52:10.059 [main] INFO  - Setting the driver
+16:52:14.482 [main] INFO  - Hover on New Bikes
+16:52:27.580 [main] INFO  - Clicked upcomming bikes
+16:52:30.675 [main] INFO  - Selected manufacturer name
+16:52:34.475 [main] INFO  - Setting the driver
+16:52:40.028 [main] INFO  - Hover on New Cars
+16:52:41.431 [main] INFO  - Setting the driver
+16:52:59.219 [main] INFO  - Setting the driver
+16:53:13.556 [main] INFO  - Hover on New Bikes
+16:53:13.902 [main] INFO  - Clicked upcomming bikes
+16:53:16.838 [main] INFO  - Selected manufacturer name
+16:54:04.869 [main] INFO  - Setting the driver
+16:54:18.996 [main] INFO  - Hover on New Bikes
+16:54:19.335 [main] INFO  - Clicked upcomming bikes
+16:54:22.132 [main] INFO  - Selected manufacturer name
+16:54:26.047 [main] INFO  - Clicked view more option
+16:54:26.386 [main] INFO  - Printed upcomming bike details
+16:55:05.544 [main] INFO  - Setting the driver
+16:55:19.573 [main] INFO  - Hover on New Bikes
+16:55:20.334 [main] INFO  - Clicked upcomming bikes
+16:55:22.968 [main] INFO  - Selected manufacturer name
+16:56:14.694 [main] INFO  - Setting the driver
+16:56:27.214 [main] INFO  - Hover on New Bikes
+16:56:28.024 [main] INFO  - Clicked upcomming bikes
+16:56:29.751 [main] INFO  - Selected manufacturer name
+16:56:33.490 [main] INFO  - Clicked view more option
+16:56:33.751 [main] INFO  - Printed upcomming bike details
+16:57:43.181 [main] INFO  - Setting the driver
+16:57:54.613 [main] INFO  - Hover on New Bikes
+16:57:55.065 [main] INFO  - Clicked upcomming bikes
+16:57:56.699 [main] INFO  - Selected manufacturer name
+16:58:45.772 [main] INFO  - Setting the driver
+16:58:55.452 [main] INFO  - Hover on New Bikes
+16:58:56.440 [main] INFO  - Clicked upcomming bikes
+16:58:57.800 [main] INFO  - Selected manufacturer name
+16:59:45.550 [main] INFO  - Setting the driver
+16:59:55.715 [main] INFO  - Hover on New Bikes
+16:59:56.753 [main] INFO  - Clicked upcomming bikes
+16:59:59.838 [main] INFO  - Selected manufacturer name
+17:39:41.634 [main] INFO  - Setting the driver
+17:39:50.367 [main] INFO  - Clicked Login button
+17:39:51.515 [main] INFO  - Clicked Google Account
+17:39:52.861 [main] INFO  - Entered random email
+17:39:56.826 [main] INFO  - Error message printed
+17:39:59.512 [main] INFO  - Setting the driver
+17:40:06.938 [main] INFO  - Hover on New Bikes
+17:40:07.994 [main] INFO  - Clicked upcomming bikes
+17:40:12.656 [main] INFO  - Selected manufacturer name
+17:40:15.456 [main] INFO  - Clicked view more option
+17:40:15.904 [main] INFO  - Printed upcomming bike details
+17:40:26.890 [main] INFO  - Setting the driver
+17:40:34.578 [main] INFO  - Hover on New Cars
+17:40:38.242 [main] INFO  - Clicked upcomming cars
+17:40:39.697 [main] INFO  - Selected manufacturer name
+17:40:41.889 [main] INFO  - Clicked view more option
+17:40:42.776 [main] INFO  - Printed upcomming car details
+17:40:50.556 [main] INFO  - Setting the driver
+17:40:58.181 [main] INFO  - Hover on Used Cars
+17:41:01.885 [main] INFO  - Clicked Chennai
+17:41:09.059 [main] INFO  - Scrolled to popular model
+17:41:09.124 [main] INFO  - Printed popular car model names
+17:41:09.405 [main] INFO  - Printed all popular car model details
+17:41:09.412 [main] INFO  - Written popular car model names in excel sheet
+17:41:09.869 [main] INFO  - Written all popular car model details in excel sheet
+17:42:48.832 [main] INFO  - Setting the driver
+17:42:58.076 [main] INFO  - Hover More
+17:43:02.165 [main] INFO  - Clicked Health Insurance
+17:43:22.199 [main] INFO  - Written Health Insurance brand name in excel sheet
+17:43:22.207 [main] INFO  - Written Health Insurance plan in excel sheet
+17:44:45.042 [main] INFO  - Setting the driver
+17:44:54.616 [main] INFO  - Hover on Used Cars
+17:44:58.053 [main] INFO  - Clicked Chennai
+17:45:03.826 [main] INFO  - Scrolled to popular model
+17:45:03.890 [main] INFO  - Printed popular car model names
+17:45:04.303 [main] INFO  - Printed all popular car model details
+17:45:04.324 [main] INFO  - Written popular car model names in excel sheet
+17:45:07.155 [main] INFO  - Written all popular car model details in excel sheet
+17:48:15.617 [main] INFO  - Setting the driver
+17:48:25.647 [main] INFO  - Hover on Used Cars
+17:48:29.124 [main] INFO  - Clicked Chennai
+17:48:34.607 [main] INFO  - Scrolled to popular model
+17:48:34.713 [main] INFO  - Printed popular car model names
+17:48:35.213 [main] INFO  - Printed all popular car model details
+17:48:35.244 [main] INFO  - Written popular car model names in excel sheet
+17:48:37.850 [main] INFO  - Written all popular car model details in excel sheet
+17:50:36.200 [main] INFO  - Setting the driver
+17:50:43.459 [main] INFO  - Hover on Used Cars
+17:50:43.551 [main] INFO  - Written popular car model names in excel sheet
+17:50:46.363 [main] INFO  - Written all popular car model details in excel sheet
+17:51:15.958 [main] INFO  - Setting the driver
+17:51:24.879 [main] INFO  - Hover on Used Cars
+17:51:28.401 [main] INFO  - Clicked Chennai
+17:51:34.003 [main] INFO  - Scrolled to popular model
+17:51:34.073 [main] INFO  - Printed popular car model names
+17:51:34.543 [main] INFO  - Printed all popular car model details
+17:51:34.570 [main] INFO  - Written popular car model names in excel sheet
+17:51:38.176 [main] INFO  - Written all popular car model details in excel sheet

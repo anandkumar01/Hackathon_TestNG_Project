@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-28T14:45:03 IST" name="Suite" finished-at="2024-02-28T14:46:14 IST" duration-ms="70556">
+  <suite started-at="2024-02-29T17:51:14 IST" name="Suite" finished-at="2024-02-29T17:54:10 IST" duration-ms="176645">
     <groups>
-      <group name="smoke">
-        <method signature="TC001_InvalidGoogleLogin.smokeInvalidGoogleLogin()[pri:0, instance:testCases.TC001_InvalidGoogleLogin@5b247367]" name="smokeInvalidGoogleLogin" class="testCases.TC001_InvalidGoogleLogin"/>
-        <method signature="TC002_BikeDetails.smokeBikeDetails()[pri:0, instance:testCases.TC002_BikeDetails@7c137fd5]" name="smokeBikeDetails" class="testCases.TC002_BikeDetails"/>
-        <method signature="TC003_CarDetails.smokeCarDetails()[pri:0, instance:testCases.TC003_CarDetails@183ec003]" name="smokeCarDetails" class="testCases.TC003_CarDetails"/>
-        <method signature="TC004_UsedCarDetails.smokePopularCarModel()[pri:0, instance:testCases.TC004_UsedCarDetails@7d9d0818]" name="smokePopularCarModel" class="testCases.TC004_UsedCarDetails"/>
-        <method signature="TC005_HealthInsurance.smokeHealthInsurance()[pri:0, instance:testCases.TC005_HealthInsurance@221a3fa4]" name="smokeHealthInsurance" class="testCases.TC005_HealthInsurance"/>
-      </group> <!-- smoke -->
+      <group name="regression">
+        <method signature="TC004_UsedCarDetails.testUsedCars()[pri:0, instance:testCases.TC004_UsedCarDetails@5032714f]" name="testUsedCars" class="testCases.TC004_UsedCarDetails"/>
+        <method signature="TC004_UsedCarDetails.testWritePopularCarModel()[pri:1, instance:testCases.TC004_UsedCarDetails@5032714f]" name="testWritePopularCarModel" class="testCases.TC004_UsedCarDetails"/>
+        <method signature="TC004_UsedCarDetails.testWriteAllPopularCarModelDetails()[pri:2, instance:testCases.TC004_UsedCarDetails@5032714f]" name="testWriteAllPopularCarModelDetails" class="testCases.TC004_UsedCarDetails"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC004_UsedCarDetails.testUsedCars()[pri:0, instance:testCases.TC004_UsedCarDetails@5032714f]" name="testUsedCars" class="testCases.TC004_UsedCarDetails"/>
+        <method signature="TC004_UsedCarDetails.testWritePopularCarModel()[pri:1, instance:testCases.TC004_UsedCarDetails@5032714f]" name="testWritePopularCarModel" class="testCases.TC004_UsedCarDetails"/>
+        <method signature="TC004_UsedCarDetails.testWriteAllPopularCarModelDetails()[pri:2, instance:testCases.TC004_UsedCarDetails@5032714f]" name="testWriteAllPopularCarModelDetails" class="testCases.TC004_UsedCarDetails"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-02-28T14:45:03 IST" name="Chrome Test" finished-at="2024-02-28T14:46:14 IST" duration-ms="70556">
+    <test started-at="2024-02-29T17:51:14 IST" name="Chrome Test" finished-at="2024-02-29T17:54:10 IST" duration-ms="176645">
       <class name="testCases.TC004_UsedCarDetails">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC004_UsedCarDetails@7d9d0818]" started-at="2024-02-28T14:45:45 IST" name="initializeBrowser" finished-at="2024-02-28T14:45:52 IST" duration-ms="6510" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC004_UsedCarDetails@5032714f]" started-at="2024-02-29T17:51:14 IST" name="initializeBrowser" finished-at="2024-02-29T17:51:24 IST" duration-ms="10391" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,99 +28,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="smokePopularCarModel()[pri:0, instance:testCases.TC004_UsedCarDetails@7d9d0818]" started-at="2024-02-28T14:45:52 IST" name="smokePopularCarModel" finished-at="2024-02-28T14:46:00 IST" duration-ms="8400" status="PASS">
+        <test-method signature="testUsedCars()[pri:0, instance:testCases.TC004_UsedCarDetails@5032714f]" started-at="2024-02-29T17:51:24 IST" name="testUsedCars" finished-at="2024-02-29T17:51:34 IST" duration-ms="9794" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- smokePopularCarModel -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC004_UsedCarDetails@7d9d0818]" started-at="2024-02-28T14:46:00 IST" name="closeBrowser" finished-at="2024-02-28T14:46:01 IST" duration-ms="1135" status="PASS">
+        </test-method> <!-- testUsedCars -->
+        <test-method signature="testWritePopularCarModel()[pri:1, instance:testCases.TC004_UsedCarDetails@5032714f]" started-at="2024-02-29T17:51:34 IST" name="testWritePopularCarModel" finished-at="2024-02-29T17:51:38 IST" duration-ms="3594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWritePopularCarModel -->
+        <test-method signature="testWriteAllPopularCarModelDetails()[pri:2, instance:testCases.TC004_UsedCarDetails@5032714f]" started-at="2024-02-29T17:51:38 IST" name="testWriteAllPopularCarModelDetails" finished-at="2024-02-29T17:54:09 IST" duration-ms="151298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWriteAllPopularCarModelDetails -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC004_UsedCarDetails@5032714f]" started-at="2024-02-29T17:54:09 IST" name="closeBrowser" finished-at="2024-02-29T17:54:10 IST" duration-ms="1408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testCases.TC004_UsedCarDetails -->
-      <class name="testCases.TC005_HealthInsurance">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC005_HealthInsurance@221a3fa4]" started-at="2024-02-28T14:46:01 IST" name="initializeBrowser" finished-at="2024-02-28T14:46:08 IST" duration-ms="6341" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="smokeHealthInsurance()[pri:0, instance:testCases.TC005_HealthInsurance@221a3fa4]" started-at="2024-02-28T14:46:08 IST" name="smokeHealthInsurance" finished-at="2024-02-28T14:46:13 IST" duration-ms="4735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeHealthInsurance -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC005_HealthInsurance@221a3fa4]" started-at="2024-02-28T14:46:13 IST" name="closeBrowser" finished-at="2024-02-28T14:46:14 IST" duration-ms="1135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC005_HealthInsurance -->
-      <class name="testCases.TC003_CarDetails">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC003_CarDetails@183ec003]" started-at="2024-02-28T14:45:26 IST" name="initializeBrowser" finished-at="2024-02-28T14:45:32 IST" duration-ms="6011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="smokeCarDetails()[pri:0, instance:testCases.TC003_CarDetails@183ec003]" started-at="2024-02-28T14:45:32 IST" name="smokeCarDetails" finished-at="2024-02-28T14:45:44 IST" duration-ms="12329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeCarDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC003_CarDetails@183ec003]" started-at="2024-02-28T14:45:44 IST" name="closeBrowser" finished-at="2024-02-28T14:45:45 IST" duration-ms="1152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC003_CarDetails -->
-      <class name="testCases.TC001_InvalidGoogleLogin">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC001_InvalidGoogleLogin@5b247367]" started-at="2024-02-28T14:45:03 IST" name="initializeBrowser" finished-at="2024-02-28T14:45:13 IST" duration-ms="9425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="smokeInvalidGoogleLogin()[pri:0, instance:testCases.TC001_InvalidGoogleLogin@5b247367]" started-at="2024-02-28T14:45:13 IST" name="smokeInvalidGoogleLogin" finished-at="2024-02-28T14:45:15 IST" duration-ms="2327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeInvalidGoogleLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC001_InvalidGoogleLogin@5b247367]" started-at="2024-02-28T14:45:15 IST" name="closeBrowser" finished-at="2024-02-28T14:45:16 IST" duration-ms="1280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC001_InvalidGoogleLogin -->
-      <class name="testCases.TC002_BikeDetails">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testCases.TC002_BikeDetails@7c137fd5]" started-at="2024-02-28T14:45:16 IST" name="initializeBrowser" finished-at="2024-02-28T14:45:23 IST" duration-ms="6404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="smokeBikeDetails()[pri:0, instance:testCases.TC002_BikeDetails@7c137fd5]" started-at="2024-02-28T14:45:23 IST" name="smokeBikeDetails" finished-at="2024-02-28T14:45:25 IST" duration-ms="2026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeBikeDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC002_BikeDetails@7c137fd5]" started-at="2024-02-28T14:45:25 IST" name="closeBrowser" finished-at="2024-02-28T14:45:26 IST" duration-ms="1219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC002_BikeDetails -->
     </test> <!-- Chrome Test -->
   </suite> <!-- Suite -->
 </testng-results>
