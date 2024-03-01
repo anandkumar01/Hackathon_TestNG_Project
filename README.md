@@ -57,13 +57,13 @@ To execute the project and obtain the expected output, please follow the steps b
 ************************************************FILES DESCRIPTION************************************************
  
 **1. src/test/java**
-    a. factory package:
+    **a. factory package:**
         Contains the implementation of browser factory. properties file handling and logger functionalities.
-    b. pageObjects package:
+    **b. pageObjects package:**
         Contains BasePage, and classes representing page objects specific to the project, extending the BasePage.
-    c. testCases package:
+    **c. testCases package:**
         Contains actual test cases for the project. All test cases extends CrossBrowsing class from the factory package.
-    d. utilitis package:
+    **d. utilitis package:**
         Contains WriteExcelData class to write all the data into the Apache excel file.
      
 **2.src/test/resources**
