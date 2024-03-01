@@ -1,12 +1,8 @@
 package pageObjects;
 
-import java.io.File;
 import java.time.Duration;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,27 +31,5 @@ public class BasePage {
 	public void scrollToElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
-	}
-
-	public void captureFullPageScreenshot(WebDriver driver, String outputPath) {
-		try {
-			// Using JavascriptExecutor to capture a full-page screenshot
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-
-			// Get the entire HTML content
-			String fullPageHtml = (String) js.executeScript("return document.documentElement.outerHTML");
-
-			// Save the HTML content to a file (optional, for reference)
-			FileUtils.write(new File(outputPath + ".\\fullpage.html"), fullPageHtml, "UTF-8");
-
-			// Using TakesScreenshot interface to capture the screenshot
-			TakesScreenshot screenshotDriver = (TakesScreenshot) driver;
-			File screenshot = screenshotDriver.getScreenshotAs(OutputType.FILE);
-
-			// Save the screenshot to a file
-			FileUtils.copyFile(screenshot, new File(outputPath + ".\\fullpagescreenshot.png"));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }

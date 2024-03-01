@@ -14,7 +14,7 @@ import pageObjects.InvalidGoogleLoginPage;
 import pageObjects.UsedCarPage;
 import utilities.WriteExcelData;
 
-public class TC01_IdentifyNewBikes extends CrossBrowsing {
+public class TC_IdentifyNewBikes extends CrossBrowsing {
 
 	InvalidGoogleLoginPage login;
 	BikeDetailsPage bike;

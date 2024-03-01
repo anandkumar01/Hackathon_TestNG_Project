@@ -113,3 +113,31 @@
 17:51:34.543 [main] INFO  - Printed all popular car model details
 17:51:34.570 [main] INFO  - Written popular car model names in excel sheet
 17:51:38.176 [main] INFO  - Written all popular car model details in excel sheet
+15:10:35.520 [main] INFO  - Setting the driver
+15:10:55.682 [main] INFO  - Hover on New Bikes
+15:11:11.513 [main] INFO  - Clicked upcomming bikes
+15:11:15.284 [main] INFO  - Selected manufacturer name
+15:11:16.884 [main] INFO  - Clicked view more option
+15:11:17.461 [main] INFO  - Printed upcomming bike details
+15:11:26.206 [main] INFO  - Setting the driver
+15:11:32.396 [main] INFO  - Hover on New Cars
+15:11:35.144 [main] INFO  - Clicked upcomming cars
+15:11:36.645 [main] INFO  - Selected manufacturer name
+15:12:01.261 [main] INFO  - Clicked view more option
+15:12:01.503 [main] INFO  - Printed upcomming car details
+15:12:08.361 [main] INFO  - Setting the driver
+15:12:19.324 [main] INFO  - Hover on Used Cars
+15:12:23.703 [main] INFO  - Clicked Chennai
+15:12:48.700 [main] INFO  - Scrolled to popular model
+15:12:48.764 [main] INFO  - Printed popular car model names
+15:12:48.995 [main] INFO  - Printed all popular car model details
+15:12:49.000 [main] INFO  - Written popular car model names in excel sheet
+15:12:49.299 [main] INFO  - Written all popular car model details in excel sheet
+15:14:47.546 [main] INFO  - Setting the driver
+15:14:54.681 [main] INFO  - Hover More
+15:14:58.070 [main] INFO  - Clicked Health Insurance
+15:15:22.737 [main] INFO  - Filled Health Insurance basic details
+15:15:31.423 [main] INFO  - Printed Health Insurance brand names
+15:15:53.842 [main] INFO  - Printed Health Insurance plan
+15:15:53.979 [main] INFO  - Written Health Insurance brand name in excel sheet
+15:16:09.657 [main] INFO  - Written Health Insurance plan in excel sheet

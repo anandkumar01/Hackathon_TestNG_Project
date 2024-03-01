@@ -72,10 +72,8 @@ public class BikeDetailsPage extends BasePage {
 		Properties property = new CrossBrowsing().getProperties();
 		explicitWait(selectmanufacturer);
 		Select select = new Select(selectmanufacturer);
-		String s = property.getProperty("bikemanufacturer");
-		System.out.println(s);
-		select.selectByVisibleText(s);
-		captureFullPageScreenshot(driver, filepath);
+		String str = property.getProperty("bikemanufacturer");
+		select.selectByVisibleText(str);
 	}
 
 	public void clickToViewMore() throws IOException {
