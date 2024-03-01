@@ -66,7 +66,7 @@ To execute the project and obtain the expected output, please follow the steps b
     **d. utilitis package:**
         Contains WriteExcelData class to write all the data into the Apache excel file.
      
-**2.src/test/resources**
+**2. src/test/resources**
     config.properties: Configuration file containing data used in the pageObjects package.
     log4j2.xml: Configuration file for Log4j2. which manages project logs.
     testdata.xlsx: Apache excel file that contains all extracted data of projects.
