@@ -1,0 +1,572 @@
+************************************************PROJECT DESCRIPTION************************************************
+
+Project Statement:
+1. Login with Google
+    Attempt to log in using a Google account.
+    Provide invalid account details to capture the error message.
+2. Upcoming Bikes
+    Display the details of upcoming bikes, including the bike name, price, and expected launch date in India.
+    The manufacturer should be Honda.
+    The bike price should be less than 4 lakhs.
+3. Upcoming Cars
+    Display the details of upcoming cars, including the car name, price, and expected launch date in India.
+    The manufacturer should be Tata.
+4. Used Cars in Chennai
+    Extract the popular models of used cars in Chennai and display their details.
+5. Health Insurance
+    Display the brand names and plans of health insurance policies.
+
+Detailed Description:
+    1. Launch the desired browser.
+    2. Open the "https://zigwheels.com" website.
+    3. Click on the Signin/Register button.
+    4. Click on the Google option and provide invalid credentials.
+    5. Capture the error message displayed.
+    6. Hover over the "New Bikes" section.
+    7. Click on the "Upcoming Bikes" option.
+    8. Select Honda as the manufacturer name.
+    9. Extract all upcoming Honda bikes with a price less than 4 lakhs.
+    10. Hover over the "New Cars" section.
+    11. Click on the "Upcoming Cars" option.
+    12. Select Tata as the manufacturer name.
+    13. Extract all upcoming Tata cars.
+    14. Hover over the "Used Cars" section and click on Chennai as the city.
+    15. Display all popular models in a list.
+    16. Click on each popular model checkbox and extract all the details of the used car.
+    17. Hover over the "More" section and click on "Health Insurance".
+    18. Fill in all the required details.
+    19. Extract all Health Insurance brand names and plans.
+    20. Close the browser.
+
+Key Automation Scope:
+    1. Handling windows & frames
+    2. Filling simple form, Capture warning message
+    3. Extract menu items from frames & store in collections
+    4. Navigating back to home page
+
+************************************************STEPS TO EXECUTE************************************************
+
+To execute the project and obtain the expected output, please follow the steps below:
+    1. Unzip the project folder.
+    2. Open Eclipse and go to File -> Import -> Maven -> Existing Maven Project.
+    3. Browse to the location where you unzipped the folder and click Finish.
+    4. Locate the TestNG.xml file in the project and right-click on it.
+    5. Select Run As -> TestNG Suite.
+
+************************************************FILES DESCRIPTION************************************************
+ 
+1. src/test/java
+    a. factory package:
+        Contains the implementation of browser factory. properties file handling and logger functionalities.
+    b. pageObjects package:
+        Contains BasePage, and classes representing page objects specific to the project, extending the BasePage.
+    c. testCases package:
+        Contains actual test cases for the project. All test cases extends CrossBrowsing class from the factory package.
+    d. utilitis package:
+        Contains WriteExcelData class to write all the data into the Apache excel file.
+     
+2.src/test/resources
+    config.properties: Configuration file containing data used in the pageObjects package.
+    log4j2.xml: Configuration file for Log4j2. which manages project logs.
+    testdata.xlsx: Apache excel file that contains all extracted data of projects.
+ 
+3. Maven Dependencies:
+    In this File we have all the directory on the local machine, where all the project artifacts are stored. when a Maven build is executed,
+    Maven automatically downloads all the dependency jars into the local repository. Usually, this directory is named.
+
+4. test-output:
+    It is a spark report created every times project is executed.
+
+5. pom.xml:
+    The pom.xml file contains information of project and configuration for the maven to build the project such as dependencies,
+    build directory, source directory, plugin etc.
+
+6. testng.xml:
+    Configuration file for executing the project as a TestNG suite.
+    It specifies the test classes and their execution order.
+
+************************************************OUTPUT ON CONSOLE************************************************
+
+Starting the browser session..
+
+Error message displayed : Couldn’t find your Google Account
+
+Closing the browser session..
+
+Starting the browser session..
+
+Honda
+All upcoming bike details under 4 Lacks are displayed below :
+
+Bike Details1: [Honda CRF300L, Rs. 3.30 Lakh, Launch Date : 30 Mar 2024]
+
+Bike Details2: [Honda Activa Electric, Rs. 1.10 Lakh, Launch Date : Mar 2024]
+
+Bike Details3: [Honda Forza 350, Rs. 3.70 Lakh, Launch Date : Mar 2024]
+
+Bike Details4: [Honda CB350 Cruiser, Rs. 2.30 Lakh, Launch Date : Mar 2024]
+
+Bike Details5: [Honda Activa 7G, Rs. 79,000, Launch Date : Apr 2024]
+
+Bike Details6: [Honda PCX160, Rs. 1.20 Lakh, Launch Date : Jun 2024]
+
+Bike Details7: [Honda CBR150R, Rs. 1.70 Lakh, Launch Date : Unrevealed]
+
+Bike Details8: [Honda Rebel 300, Rs. 2.30 Lakh, Launch Date : Unrevealed]
+
+Closing the browser session..
+
+Starting the browser session..
+
+
+All upcoming car details are displayed below :
+
+Car Details1: [Tata Altroz Racer, Rs. 10.00 Lakh, Launch Date : 20 Mar 2024]
+
+Car Details2: [Tata Curvv EV, Rs. 20.00 Lakh, Launch Date : Jul 2024]
+
+Car Details3: [Tata Curvv, Rs. 10.50 Lakh, Launch Date : Aug 2024]
+
+Car Details4: [Tata Avinya, Rs. 30.00 Lakh, Launch Date : Jan 2025]
+
+Car Details5: [Tata Harrier EV, Rs. 30.00 Lakh, Launch Date : Apr 2025]
+
+Car Details6: [Tata Punch 2025, Rs. 6.00 Lakh, Launch Date : Jun 2025]
+
+Car Details7: [Tata Sierra, Rs. 25.00 Lakh, Launch Date : Dec 2025]
+
+Car Details8: [Tata Kite 5, Rs. 4.50 Lakh, Launch Date : Unrevealed]
+
+Car Details9: [Tata Atmos, Rs. 12.00 Lakh, Launch Date : Unrevealed]
+
+Car Details10: [Tata H7X, Rs. 15.00 Lakh, Launch Date : Unrevealed]
+
+Car Details11: [Tata Altroz EV, Rs. 14.00 Lakh, Launch Date : Unrevealed]
+
+Car Details12: [Tata Hexa, Rs. 14.00 Lakh, Launch Date : Unrevealed]
+
+Car Details13: [Tata EVision Electric, Rs. 25.00 Lakh, Launch Date : Unrevealed]
+
+Closing the browser session..
+
+Starting the browser session..
+
+All popular car models are displayed below :
+1. Maruti 800
+2. Maruti Swift Dzire
+3. Maruti Swift
+4. Hyundai I10
+5. Hyundai Santro Xing
+6. Honda City
+7. Toyota Innova
+8. Toyota Fortuner
+9. Mahindra XUV500
+
+CarDetails for Checkbox 1, Set 1: [Maruti 800 Maruti 800 Std, Rs. 70,000, Petrol, 10000 Kms, 1999 Model]
+
+CarDetails for Checkbox 1, Set 2: [Maruti 800 Maruti 800 AC, Rs. 1.00 Lakh, Petrol, 70000 Kms, 2005 Model]
+
+CarDetails for Checkbox 1, Set 3: [Maruti 800 Maruti 800 AC, Rs. 30,000, Petrol, 60000 Kms, 1999 Model]
+
+CarDetails for Checkbox 1, Set 4: [Maruti 800 Maruti 800 AC, Rs. 55,000, Petrol, 90000 Kms, 2006 Model]
+
+CarDetails for Checkbox 1, Set 5: [Maruti 800 Maruti 800 AC, Rs. 80,000, Petrol, 50000 Kms, 2006 Model]
+
+CarDetails for Checkbox 1, Set 6: [Maruti 800 Maruti 800 AC, Rs. 30,000, Petrol, 40000 Kms, 1999 Model]
+
+CarDetails for Checkbox 1, Set 7: [Maruti 800 Maruti 800 Std, Rs. 1.40 Lakh, Petrol, 70000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 1: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI, Rs. 3.50 Lakh, Petrol, 60000 Kms, 2010 Model]
+
+CarDetails for Checkbox 2, Set 2: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire ZDi, Rs. 3.65 Lakh, Diesel, 80000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 3: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 3.75 Lakh, Petrol, 108910 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 4: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT ZDI, Rs. 7.62 Lakh, Diesel, 48633 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 5: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire ZXI, Rs. 5.75 Lakh, Petrol, 67188 Kms, 2016 Model]
+
+CarDetails for Checkbox 2, Set 6: [Maruti Swift Dzire Maruti Swift Dzire ZXI Plus BSVI, Rs. 7.65 Lakh, Petrol, 39973 Kms, 2020 Model]
+
+CarDetails for Checkbox 2, Set 7: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT VXI, Rs. 6.66 Lakh, Petrol, 42759 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 8: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VDI, Rs. 5.08 Lakh, Diesel, 94541 Kms, 2014 Model]
+
+CarDetails for Checkbox 2, Set 9: [Maruti Dzire 2017-2020 Maruti Swift Dzire VXI 1.2, Rs. 5.70 Lakh, Petrol, 91800 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 10: [Maruti Dzire 2017-2020 Maruti Swift Dzire VXI 1.2, Rs. 5.70 Lakh, Petrol, 91861 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 11: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT ZXI Plus, Rs. 7.16 Lakh, Petrol, 31957 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 12: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT VXI, Rs. 5.89 Lakh, Petrol, 86474 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 13: [Maruti Dzire 2017-2020 Maruti Swift Dzire ZXI 1.2, Rs. 6.83 Lakh, Petrol, 34572 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 14: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire ZXI, Rs. 7.50 Lakh, Petrol, 29631 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 15: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire ZXI, Rs. 5.75 Lakh, Petrol, 67188 Kms, 2016 Model]
+
+CarDetails for Checkbox 2, Set 16: [Maruti Swift Dzire Maruti Swift Dzire VXI BSVI, Rs. 7.10 Lakh, Petrol, 20000 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 17: [Maruti Dzire 2017-2020 Maruti Swift Dzire LDI, Rs. 4.80 Lakh, Diesel, 110000 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 18: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT ZDI, Rs. 6.74 Lakh, Diesel, 113652 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 19: [Maruti Swift Dzire Maruti Swift Dzire VXI AT BSVI, Rs. 7.41 Lakh, Petrol, 45324 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 20: [Maruti Swift Dzire Maruti Swift Dzire ZXI AT BSVI, Rs. 8.21 Lakh, Petrol, 7158 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 21: [Maruti Dzire 2017-2020 Maruti Swift Dzire VXI 1.2, Rs. 5.58 Lakh, Petrol, 44804 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 22: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VDi, Rs. 4.24 Lakh, Diesel, 97754 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 23: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI, Rs. 5.25 Lakh, Petrol, 90000 Kms, 2015 Model]
+
+CarDetails for Checkbox 2, Set 24: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VDI, Rs. 5.50 Lakh, Diesel, 120000 Kms, 2014 Model]
+
+CarDetails for Checkbox 2, Set 25: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT ZDI, Rs. 7.50 Lakh, Diesel, 40000 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 26: [Maruti Dzire 2017-2020 Maruti Swift Dzire VXI 1.2 BS IV, Rs. 5.76 Lakh, Petrol, 48016 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 27: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VDi, Rs. 3.10 Lakh, Diesel, 90000 Kms, 2010 Model]
+
+CarDetails for Checkbox 2, Set 28: [Maruti Swift Dzire Maruti Swift Dzire ZXI AT BSVI, Rs. 8.25 Lakh, Petrol, 15000 Kms, 2021 Model]
+
+CarDetails for Checkbox 2, Set 29: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT VXI BS IV, Rs. 7.45 Lakh, Petrol, 25000 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 30: [Maruti Swift Dzire Maruti Swift Dzire ZXI Plus BSVI, Rs. 8.75 Lakh, Petrol, 20000 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 31: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire LDI, Rs. 4.20 Lakh, Diesel, 150000 Kms, 2015 Model]
+
+CarDetails for Checkbox 2, Set 32: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire LDI, Rs. 3.18 Lakh, Diesel, 110000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 33: [Maruti Swift Dzire Maruti Swift Dzire ZXI AT BSVI, Rs. 7.30 Lakh, Petrol, 20000 Kms, 2021 Model]
+
+CarDetails for Checkbox 2, Set 34: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 3.55 Lakh, Petrol, 90000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 35: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 2.97 Lakh, Petrol, 60000 Kms, 2010 Model]
+
+CarDetails for Checkbox 2, Set 36: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire LXi, Rs. 4.95 Lakh, Petrol, 44494 Kms, 2016 Model]
+
+CarDetails for Checkbox 2, Set 37: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 3.10 Lakh, Petrol, 94348 Kms, 2010 Model]
+
+CarDetails for Checkbox 2, Set 38: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI, Rs. 2.45 Lakh, Petrol, 112000 Kms, 2009 Model]
+
+CarDetails for Checkbox 2, Set 39: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXi AT, Rs. 5.75 Lakh, Petrol, 38510 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 40: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT VXI, Rs. 5.50 Lakh, Petrol, 51396 Kms, 2016 Model]
+
+CarDetails for Checkbox 2, Set 41: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 3.60 Lakh, Petrol, 139471 Kms, 2011 Model]
+
+CarDetails for Checkbox 2, Set 42: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI, Rs. 5.80 Lakh, Petrol, 35375 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 43: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire ZDI, Rs. 7.00 Lakh, Diesel, 50708 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 44: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire ZXi, Rs. 6.95 Lakh, Petrol, 47125 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 45: [Maruti Swift Dzire Maruti Swift Dzire VXI BSVI, Rs. 4.10 Lakh, Petrol, 55320 Kms, 2013 Model]
+
+CarDetails for Checkbox 2, Set 46: [Maruti Swift Dzire Tour 2012-2018 Maruti Swift Dzire LXI, Rs. 4.10 Lakh, Petrol, 62930 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 47: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 4.00 Lakh, Petrol, 120000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 48: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT ZXI Plus, Rs. 6.50 Lakh, Petrol, 60000 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 49: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VXI, Rs. 4.00 Lakh, Petrol, 110000 Kms, 2014 Model]
+
+CarDetails for Checkbox 2, Set 50: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire ZXI, Rs. 7.50 Lakh, Petrol, 27991 Kms, 2020 Model]
+
+CarDetails for Checkbox 2, Set 51: [Maruti Dzire 2017-2020 Maruti Swift Dzire ZXI 1.2 BS IV, Rs. 6.00 Lakh, Petrol, 100000 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 52: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire ZDI, Rs. 5.00 Lakh, Diesel, 150000 Kms, 2013 Model]
+
+CarDetails for Checkbox 2, Set 53: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VDI, Rs. 5.00 Lakh, Diesel, 50000 Kms, 2013 Model]
+
+CarDetails for Checkbox 2, Set 54: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire LDI, Rs. 4.00 Lakh, Diesel, 90000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 55: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT ZXI BS IV, Rs. 7.04 Lakh, Petrol, 50000 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 56: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VDi, Rs. 3.00 Lakh, Diesel, 100000 Kms, 2011 Model]
+
+CarDetails for Checkbox 2, Set 57: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VXi, Rs. 2.50 Lakh, Petrol, 120000 Kms, 2009 Model]
+
+CarDetails for Checkbox 2, Set 58: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VXI, Rs. 3.50 Lakh, Petrol, 120000 Kms, 2013 Model]
+
+CarDetails for Checkbox 2, Set 59: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VDi, Rs. 3.50 Lakh, Diesel, 150000 Kms, 2009 Model]
+
+CarDetails for Checkbox 2, Set 60: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VDI, Rs. 5.00 Lakh, Diesel, 120000 Kms, 2013 Model]
+
+CarDetails for Checkbox 2, Set 61: [Maruti Swift Dzire Tour 2012-2018 Maruti Swift Dzire S, Rs. 4.00 Lakh, Petrol, 150000 Kms, 2015 Model]
+
+CarDetails for Checkbox 2, Set 62: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire ZDI, Rs. 4.50 Lakh, Diesel, 150000 Kms, 2013 Model]
+
+CarDetails for Checkbox 2, Set 63: [Maruti Dzire 2017-2020 Maruti Swift Dzire VXI 1.2, Rs. 6.20 Lakh, Petrol, 30000 Kms, 2019 Model]
+
+CarDetails for Checkbox 2, Set 64: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire LDI, Rs. 3.95 Lakh, Diesel, 150000 Kms, 2016 Model]
+
+CarDetails for Checkbox 2, Set 65: [Maruti Swift Dzire Maruti Swift Dzire VXI CNG BSVI, Rs. 7.66 Lakh, CNG, 70000 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 66: [Maruti Swift Dzire Maruti Swift Dzire VXI BSVI, Rs. 7.00 Lakh, Petrol, 20000 Kms, 2021 Model]
+
+CarDetails for Checkbox 2, Set 67: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire LXi, Rs. 3.20 Lakh, Petrol, 50000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 68: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VDi, Rs. 3.50 Lakh, Diesel, 150000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 69: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire VDi, Rs. 3.50 Lakh, Diesel, 150000 Kms, 2012 Model]
+
+CarDetails for Checkbox 2, Set 70: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI, Rs. 5.00 Lakh, Petrol, 90000 Kms, 2015 Model]
+
+CarDetails for Checkbox 2, Set 71: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire ZXI, Rs. 4.50 Lakh, Petrol, 80000 Kms, 2015 Model]
+
+CarDetails for Checkbox 2, Set 72: [Maruti Swift Dzire Maruti Swift Dzire VXI AT BSVI, Rs. 8.00 Lakh, Petrol, 10000 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 73: [Maruti Swift Dzire Maruti Swift Dzire VXI AT, Rs. 8.25 Lakh, Petrol, 10000 Kms, 2023 Model]
+
+CarDetails for Checkbox 2, Set 74: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire ZDI, Rs. 5.50 Lakh, Diesel, 150000 Kms, 2014 Model]
+
+CarDetails for Checkbox 2, Set 75: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI, Rs. 4.50 Lakh, Petrol, 70000 Kms, 2015 Model]
+
+CarDetails for Checkbox 2, Set 76: [Maruti Swift Dzire 2008-2012 Maruti Swift Dzire 1.2 Lxi BSIV, Rs. 3.50 Lakh, Petrol, 70000 Kms, 2011 Model]
+
+CarDetails for Checkbox 2, Set 77: [Maruti Swift Dzire 2015-2017 Maruti Swift Dzire VXI Optional, Rs. 5.00 Lakh, Petrol, 70000 Kms, 2016 Model]
+
+CarDetails for Checkbox 2, Set 78: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT VDI, Rs. 6.00 Lakh, Diesel, 60000 Kms, 2018 Model]
+
+CarDetails for Checkbox 2, Set 79: [Maruti Dzire 2017-2020 Maruti Swift Dzire ZDI Plus, Rs. 6.00 Lakh, Diesel, 60000 Kms, 2017 Model]
+
+CarDetails for Checkbox 2, Set 80: [Maruti Swift Dzire Maruti Swift Dzire VXI AT BSVI, Rs. 7.50 Lakh, Petrol, 10000 Kms, 2022 Model]
+
+CarDetails for Checkbox 2, Set 81: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire LXI, Rs. 4.50 Lakh, Petrol, 60000 Kms, 2014 Model]
+
+CarDetails for Checkbox 2, Set 82: [Maruti Dzire 2017-2020 Maruti Swift Dzire AMT VXI, Rs. 7.00 Lakh, Petrol, 50000 Kms, 2020 Model]
+
+CarDetails for Checkbox 2, Set 83: [Maruti Swift Dzire 2011-2014 Maruti Swift Dzire VXi AT, Rs. 4.75 Lakh, Petrol, 76952 Kms, 2016 Model]
+
+CarDetails for Checkbox 3, Set 1: [Maruti Swift 2014-2021 Maruti Swift VVT VXI, Rs. 5.95 Lakh, Petrol, 56852 Kms, 2018 Model]
+
+CarDetails for Checkbox 3, Set 2: [Maruti Swift 2010-2014 Maruti Swift VXI, Rs. 3.75 Lakh, Petrol, 108910 Kms, 2012 Model]
+
+CarDetails for Checkbox 3, Set 3: [Maruti Swift 2004-2010 Maruti Swift 1.3 VXi, Rs. 3.95 Lakh, Petrol, 71928 Kms, 2011 Model]
+
+CarDetails for Checkbox 3, Set 4: [Maruti Swift Maruti Swift VXI, Rs. 4.94 Lakh, Petrol, 59237 Kms, 2015 Model]
+
+CarDetails for Checkbox 3, Set 5: [Maruti Swift Maruti Swift VXI, Rs. 5.18 Lakh, Petrol, 93003 Kms, 2017 Model]
+
+CarDetails for Checkbox 3, Set 6: [Maruti Swift 2014-2021 Maruti Swift VXI BSIV, Rs. 6.05 Lakh, Petrol, 75000 Kms, 2019 Model]
+
+CarDetails for Checkbox 3, Set 7: [Maruti Swift 2014-2021 Maruti Swift DDiS VDI, Rs. 5.95 Lakh, Diesel, 87658 Kms, 2017 Model]
+
+CarDetails for Checkbox 3, Set 8: [Maruti Swift 2014-2021 Maruti Swift VVT ZXI, Rs. 6.10 Lakh, Petrol, 81400 Kms, 2017 Model]
+
+CarDetails for Checkbox 3, Set 9: [Maruti Swift 2014-2021 Maruti Swift VDI BSIV, Rs. 6.25 Lakh, Diesel, 64500 Kms, 2018 Model]
+
+CarDetails for Checkbox 3, Set 10: [Maruti Swift 2010-2014 Maruti Swift VXI, Rs. 7.25 Lakh, Petrol, 26623 Kms, 2020 Model]
+
+CarDetails for Checkbox 3, Set 11: [Maruti Swift 2018 Maruti Swift AMT VXI, Rs. 6.50 Lakh, Petrol, 62599 Kms, 2018 Model]
+
+CarDetails for Checkbox 3, Set 12: [Maruti Swift 2014-2021 Maruti Swift ZXI, Rs. 6.50 Lakh, Petrol, 47000 Kms, 2019 Model]
+
+CarDetails for Checkbox 4, Set 1: [Hyundai i10 Hyundai i10 Magna, Rs. 2.15 Lakh, Petrol, 80000 Kms, 2008 Model]
+
+CarDetails for Checkbox 4, Set 2: [Hyundai i10 Hyundai i10 Magna, Rs. 2.88 Lakh, Petrol, 67450 Kms, 2010 Model]
+
+CarDetails for Checkbox 4, Set 3: [Hyundai i10 Hyundai i10 Sportz AT, Rs. 3.10 Lakh, Petrol, 54000 Kms, 2011 Model]
+
+CarDetails for Checkbox 4, Set 4: [Hyundai i10 Hyundai i10 Sportz, Rs. 2.90 Lakh, Petrol, 71963 Kms, 2012 Model]
+
+CarDetails for Checkbox 4, Set 5: [Hyundai i10 Hyundai i10 Magna, Rs. 2.75 Lakh, Petrol, 52700 Kms, 2011 Model]
+
+CarDetails for Checkbox 4, Set 6: [Hyundai i10 Hyundai i10 Magna, Rs. 2.50 Lakh, Petrol, 78000 Kms, 2012 Model]
+
+CarDetails for Checkbox 4, Set 7: [Hyundai i10 Hyundai i10 Magna, Rs. 3.25 Lakh, Petrol, 21337 Kms, 2012 Model]
+
+CarDetails for Checkbox 4, Set 8: [Hyundai i10 2007-2010 Hyundai i10 Sportz 1.2 AT, Rs. 2.75 Lakh, Petrol, 40000 Kms, 2008 Model]
+
+CarDetails for Checkbox 4, Set 9: [Hyundai i10 Hyundai i10 Sportz 1.1L, Rs. 3.10 Lakh, Petrol, 46100 Kms, 2013 Model]
+
+CarDetails for Checkbox 4, Set 10: [Hyundai i10 Hyundai i10 Magna, Rs. 3.70 Lakh, Petrol, 93254 Kms, 2016 Model]
+
+CarDetails for Checkbox 4, Set 11: [Hyundai i10 Hyundai i10 Asta, Rs. 2.70 Lakh, Petrol, 83820 Kms, 2011 Model]
+
+CarDetails for Checkbox 4, Set 12: [Hyundai i10 2007-2010 Hyundai i10 Magna 1.2, Rs. 2.60 Lakh, Petrol, 75000 Kms, 2010 Model]
+
+CarDetails for Checkbox 5, Set 1: [Hyundai Santro Xing Hyundai Santro Xing GLS AT, Rs. 1.75 Lakh, Petrol, 45000 Kms, 2007 Model]
+
+CarDetails for Checkbox 5, Set 2: [Hyundai Santro Xing Hyundai Santro Xing GL Plus, Rs. 2.50 Lakh, Petrol, 40000 Kms, 2012 Model]
+
+CarDetails for Checkbox 5, Set 3: [Hyundai Santro Xing Hyundai Santro Xing XL, Rs. 1.10 Lakh, Petrol, 60000 Kms, 2005 Model]
+
+CarDetails for Checkbox 5, Set 4: [Hyundai Santro Xing Hyundai Santro Xing XL, Rs. 1.50 Lakh, Petrol, 84169 Kms, 2007 Model]
+
+CarDetails for Checkbox 5, Set 5: [Hyundai Santro Xing Hyundai Santro Xing XO eRLX Euro II, Rs. 1.85 Lakh, Petrol, 72110 Kms, 2006 Model]
+
+CarDetails for Checkbox 5, Set 6: [Hyundai Santro Xing Hyundai Santro Xing XL, Rs. 1.20 Lakh, Petrol, 150000 Kms, 2007 Model]
+
+CarDetails for Checkbox 5, Set 7: [Hyundai Santro Xing Hyundai Santro Xing XO, Rs. 1.30 Lakh, Petrol, 80000 Kms, 2006 Model]
+
+CarDetails for Checkbox 5, Set 8: [Hyundai Santro Xing Hyundai Santro Xing GLS, Rs. 2.00 Lakh, Petrol, 70000 Kms, 2009 Model]
+
+CarDetails for Checkbox 5, Set 9: [Hyundai Santro Xing Hyundai Santro Xing GL, Rs. 3.00 Lakh, Petrol, 100000 Kms, 2013 Model]
+
+CarDetails for Checkbox 5, Set 10: [Hyundai Santro Xing Hyundai Santro Xing GL, Rs. 1.00 Lakh, Petrol, 150000 Kms, 2007 Model]
+
+CarDetails for Checkbox 5, Set 11: [Hyundai Santro Xing Hyundai Santro Xing XG eRLX Euro II, Rs. 1.30 Lakh, Petrol, 120000 Kms, 2006 Model]
+
+CarDetails for Checkbox 5, Set 12: [Hyundai Santro Xing Hyundai Santro Xing XL, Rs. 60,000, Petrol, 80000 Kms, 2005 Model]
+
+CarDetails for Checkbox 5, Set 13: [Hyundai Santro Xing Hyundai Santro Xing GLS LPG, Rs. 75,000, LPG, 150000 Kms, 2009 Model]
+
+CarDetails for Checkbox 5, Set 14: [Hyundai Santro Xing Hyundai Santro Xing XL, Rs. 50,000, Petrol, 80000 Kms, 2005 Model]
+
+CarDetails for Checkbox 6, Set 1: [Honda City 2015-2017 Honda City i VTEC CVT VX, Rs. 7.50 Lakh, Petrol, 32000 Kms, 2015 Model]
+
+CarDetails for Checkbox 6, Set 2: [Honda City 2014-2015 Honda City i VTEC VX, Rs. 5.60 Lakh, Petrol, 59870 Kms, 2014 Model]
+
+CarDetails for Checkbox 6, Set 3: [Honda City 2014-2015 Honda City i VTEC VX, Rs. 6.80 Lakh, Petrol, 45000 Kms, 2015 Model]
+
+CarDetails for Checkbox 6, Set 4: [Honda City 4th Generation Honda City i-VTEC CVT ZX, Rs. 13.60 Lakh, Petrol, 21000 Kms, 2021 Model]
+
+CarDetails for Checkbox 6, Set 5: [Honda City 2014-2015 Honda City i VTEC V, Rs. 5.90 Lakh, Petrol, 61612 Kms, 2015 Model]
+
+CarDetails for Checkbox 6, Set 6: [Honda City 2015-2017 Honda City i VTEC V, Rs. 6.80 Lakh, Petrol, 66515 Kms, 2016 Model]
+
+CarDetails for Checkbox 6, Set 7: [Honda City 2014-2015 Honda City i VTEC VX, Rs. 5.60 Lakh, Petrol, 59870 Kms, 2014 Model]
+
+CarDetails for Checkbox 6, Set 8: [Honda City 4th Generation Honda City SV MT, Rs. 7.80 Lakh, Petrol, 50000 Kms, 2018 Model]
+
+CarDetails for Checkbox 6, Set 9: [Honda City 2014-2015 Honda City i VTEC SV, Rs. 5.30 Lakh, Petrol, 92152 Kms, 2014 Model]
+
+CarDetails for Checkbox 6, Set 10: [Honda City 4th Generation Honda City i-VTEC V, Rs. 6.96 Lakh, Petrol, 79564 Kms, 2018 Model]
+
+CarDetails for Checkbox 6, Set 11: [Honda City 2014-2015 Honda City i DTEC V, Rs. 5.90 Lakh, Diesel, 61612 Kms, 2015 Model]
+
+CarDetails for Checkbox 6, Set 12: [Honda City 2015-2017 Honda City i VTEC V, Rs. 6.31 Lakh, Petrol, 94154 Kms, 2016 Model]
+
+CarDetails for Checkbox 7, Set 1: [Toyota Innova 2012-2013 Toyota Innova 2.5 G (Diesel) 7 Seater, Rs. 8.25 Lakh, Diesel, 131000 Kms, 2013 Model]
+
+CarDetails for Checkbox 7, Set 2: [Toyota Innova Toyota Innova 2.5 G (Diesel) 7 Seater, Rs. 11.75 Lakh, Diesel, 200000 Kms, 2015 Model]
+
+CarDetails for Checkbox 7, Set 3: [Toyota Innova 2004-2011 Toyota Innova 2.5 G4 Diesel 8-seater, Rs. 4.65 Lakh, Diesel, 110000 Kms, 2007 Model]
+
+CarDetails for Checkbox 7, Set 4: [Toyota Innova Toyota Innova 2.5 VX (Diesel) 7 Seater BS IV, Rs. 12.69 Lakh, Diesel, 110000 Kms, 2015 Model]
+
+CarDetails for Checkbox 7, Set 5: [Toyota Innova 2009-2012 Toyota Innova 2.5 VX 7 STR, Rs. 11.15 Lakh, Diesel, 100000 Kms, 2012 Model]
+
+CarDetails for Checkbox 7, Set 6: [Toyota Innova 2004-2011 Toyota Innova 2.5 V Diesel 7-seater, Rs. 5.40 Lakh, Diesel, 120000 Kms, 2005 Model]
+
+CarDetails for Checkbox 7, Set 7: [Toyota Innova 2004-2011 Toyota Innova 2.5 G (Diesel) 8 Seater BS III, Rs. 8.50 Lakh, Diesel, 120000 Kms, 2011 Model]
+
+CarDetails for Checkbox 7, Set 8: [Toyota Innova 2012-2013 Toyota Innova 2.5 G (Diesel) 8 Seater BS IV, Rs. 12.00 Lakh, Diesel, 40000 Kms, 2012 Model]
+
+CarDetails for Checkbox 7, Set 9: [Toyota Innova 2012-2013 Toyota Innova 2.5 G (Diesel) 8 Seater BS IV, Rs. 12.00 Lakh, Diesel, 40000 Kms, 2012 Model]
+
+CarDetails for Checkbox 7, Set 10: [Toyota Innova Toyota Innova 2.5 G (Diesel) 8 Seater, Rs. 15.00 Lakh, Diesel, 70000 Kms, 2015 Model]
+
+CarDetails for Checkbox 7, Set 11: [Toyota Innova 2004-2011 Toyota Innova 2.5 G4 Diesel 8-seater, Rs. 7.00 Lakh, Diesel, 150000 Kms, 2010 Model]
+
+CarDetails for Checkbox 7, Set 12: [Toyota Innova 2012-2013 Toyota Innova 2.5 G (Diesel) 8 Seater, Rs. 7.50 Lakh, Diesel, 150000 Kms, 2013 Model]
+
+CarDetails for Checkbox 7, Set 13: [Toyota Innova Toyota Innova 2.5 VX (Diesel) 8 Seater BS IV, Rs. 15.00 Lakh, Diesel, 70000 Kms, 2015 Model]
+
+CarDetails for Checkbox 7, Set 14: [Toyota Innova 2004-2011 Toyota Innova 2.5 E, Rs. 6.99 Lakh, Diesel, 120000 Kms, 2009 Model]
+
+CarDetails for Checkbox 7, Set 15: [Toyota Innova 2004-2011 Toyota Innova 2.5 G4 Diesel 8-seater, Rs. 6.50 Lakh, Diesel, 80000 Kms, 2008 Model]
+
+CarDetails for Checkbox 8, Set 1: [Toyota Fortuner 2016-2021 Toyota Fortuner TRD 4X4 AT, Rs. 31.90 Lakh, Diesel, 99000 Kms, 2019 Model]
+
+CarDetails for Checkbox 8, Set 2: [Toyota Fortuner 2016-2021 Toyota Fortuner 2.8 4WD AT, Rs. 31.00 Lakh, Diesel, 58000 Kms, 2017 Model]
+
+CarDetails for Checkbox 8, Set 3: [Toyota Fortuner 2011-2016 Toyota Fortuner 4x4 MT, Rs. 15.75 Lakh, Diesel, 139000 Kms, 2014 Model]
+
+CarDetails for Checkbox 8, Set 4: [Toyota Fortuner 2009-2011 Toyota Fortuner 3.0 Diesel, Rs. 10.75 Lakh, Diesel, 200000 Kms, 2009 Model]
+
+CarDetails for Checkbox 8, Set 5: [Toyota Fortuner Toyota Fortuner 4X4 Diesel, Rs. 38.00 Lakh, Diesel, 25000 Kms, 2021 Model]
+
+CarDetails for Checkbox 8, Set 6: [Toyota Fortuner Toyota Fortuner 4X2 Diesel BSVI, Rs. 37.00 Lakh, Diesel, 20000 Kms, 2023 Model]
+
+CarDetails for Checkbox 8, Set 7: [Toyota Fortuner Toyota Fortuner 4X2 Diesel AT, Rs. 41.00 Lakh, Diesel, 10000 Kms, 2023 Model]
+
+CarDetails for Checkbox 9, Set 1: [Mahindra XUV500 Mahindra XUV500 AT W6 2WD, Rs. 14.00 Lakh, Diesel, 22000 Kms, 2018 Model]
+
+CarDetails for Checkbox 9, Set 2: [Mahindra XUV500 Mahindra XUV500 AT W9 2WD, Rs. 13.85 Lakh, Diesel, 65000 Kms, 2018 Model]
+
+CarDetails for Checkbox 9, Set 3: [Mahindra XUV500 Mahindra XUV500 W9 1.99, Rs. 17.50 Lakh, Diesel, 40000 Kms, 2021 Model]
+
+CarDetails for Checkbox 9, Set 4: [Mahindra XUV500 2011-2015 Mahindra XUV500 W6 2WD, Rs. 5.65 Lakh, Diesel, 90000 Kms, 2012 Model]
+
+CarDetails for Checkbox 9, Set 5: [Mahindra XUV500 Mahindra XUV500 W9, Rs. 16.35 Lakh, Diesel, 45912 Kms, 2021 Model]
+
+CarDetails for Checkbox 9, Set 6: [Mahindra XUV500 Mahindra XUV500 W7, Rs. 12.29 Lakh, Diesel, 108975 Kms, 2019 Model]
+
+CarDetails for Checkbox 9, Set 7: [Mahindra XUV500 2011-2015 Mahindra XUV500 W6 2WD, Rs. 6.80 Lakh, Diesel, 120000 Kms, 2012 Model]
+
+CarDetails for Checkbox 9, Set 8: [Mahindra XUV500 Mahindra XUV500 W11 Option AT BSIV, Rs. 15.45 Lakh, Diesel, 81405 Kms, 2020 Model]
+
+CarDetails for Checkbox 9, Set 9: [Mahindra XUV500 2011-2015 Mahindra XUV500 W4, Rs. 8.75 Lakh, Diesel, 70000 Kms, 2015 Model]
+
+CarDetails for Checkbox 9, Set 10: [Mahindra XUV500 Mahindra XUV500 W4, Rs. 6.30 Lakh, Diesel, 100000 Kms, 2017 Model]
+
+CarDetails for Checkbox 9, Set 11: [Mahindra XUV500 2011-2015 Mahindra XUV500 W6 2WD, Rs. 7.95 Lakh, Diesel, 105402 Kms, 2015 Model]
+
+CarDetails for Checkbox 9, Set 12: [Mahindra XUV500 2011-2015 Mahindra XUV500 W8 2WD, Rs. 8.50 Lakh, Diesel, 80000 Kms, 2014 Model]
+
+Closing the browser session..
+
+Starting the browser session..
+
+
+All Health Insurance plan are displayed below :
+1. Reliance
+2. Star Health
+3. Aditya Birla
+4. Niva Bupa
+5. Manipal Cigna
+6. Care Health
+7. Cholamandalam MS
+8. New India Assurance
+9. Liberty
+10. Zuno
+11. Universal Sompo
+12. Future Generali
+13. National Insurance
+14. IFFCO Tokio
+15. United India
+
+All Health Insurance brand name are displayed below :
+1. ₹398
+ /month
+2. ₹426
+ /month
+3. ₹481
+ /month
+4. ₹628
+ /month
+5. ₹722
+ /month
+6. ₹615
+ /month
+7. ₹528
+ /month
+8. ₹644
+ /month
+9. ₹479
+ /month
+10. ₹574
+ /month
+11. ₹568
+ /month
+12. ₹707
+ /month
+13. ₹586
+ /month
+14. ₹584
+ /month
+15. ₹498
+ /month
+
+Closing the browser session..
+
+===============================================
+Suite
+Total tests run: 11, Passes: 11, Failures: 0, Skips: 0
+===============================================
