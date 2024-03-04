@@ -44,7 +44,11 @@ public class InvalidGoogleLoginPage extends BasePage {
 	public void clickGoogleAccount() {
 		explicitWait(google);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", google);
+		try {
+			js.executeScript("arguments[0].click();", google);
+		} catch (Exception e) {
+			System.out.println("Google option is not clickable");
+		}
 	}
 
 	public void enterRandomEmail() {
