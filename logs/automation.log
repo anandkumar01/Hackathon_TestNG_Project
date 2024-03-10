@@ -141,3 +141,73 @@
 15:15:53.842 [main] INFO  - Printed Health Insurance plan
 15:15:53.979 [main] INFO  - Written Health Insurance brand name in excel sheet
 15:16:09.657 [main] INFO  - Written Health Insurance plan in excel sheet
+11:02:35.133 [main] INFO  - Setting the driver
+11:02:42.660 [main] INFO  - Clicked Login button
+11:02:43.525 [main] INFO  - Clicked Google Account
+11:02:44.089 [main] INFO  - Entered random email
+11:02:47.319 [main] INFO  - Error message printed
+11:02:48.205 [main] INFO  - Hover on New Bikes
+11:02:48.942 [main] INFO  - Clicked upcomming bikes
+11:02:50.201 [main] INFO  - Selected manufacturer name
+11:02:51.934 [main] INFO  - Clicked view more option
+11:02:53.155 [main] INFO  - Printed upcomming bike details
+11:03:00.599 [main] INFO  - Hover on New Cars
+11:03:03.888 [main] INFO  - Clicked upcomming cars
+11:03:05.478 [main] INFO  - Selected manufacturer name
+11:03:07.194 [main] INFO  - Clicked view more option
+11:03:08.716 [main] INFO  - Printed upcomming car details
+11:03:13.272 [main] INFO  - Hover on Used Cars
+11:03:16.812 [main] INFO  - Clicked Chennai
+11:03:21.389 [main] INFO  - Scrolled to popular model
+11:03:21.462 [main] INFO  - Printed popular car model names
+11:03:21.686 [main] INFO  - Printed all popular car model details
+11:07:02.428 [main] INFO  - Hover More
+11:07:38.704 [main] INFO  - Setting the driver
+11:07:47.565 [main] INFO  - Clicked Login button
+11:07:47.899 [main] INFO  - Clicked Google Account
+11:07:48.680 [main] INFO  - Entered random email
+11:07:49.940 [main] INFO  - Setting the driver
+11:07:55.891 [main] INFO  - Hover on New Bikes
+11:07:56.567 [main] INFO  - Clicked upcomming bikes
+11:07:58.013 [main] INFO  - Selected manufacturer name
+11:08:01.724 [main] INFO  - Clicked view more option
+11:08:02.962 [main] INFO  - Printed upcomming bike details
+11:08:12.110 [main] INFO  - Setting the driver
+11:08:17.723 [main] INFO  - Hover on New Cars
+11:08:20.724 [main] INFO  - Clicked upcomming cars
+11:08:24.418 [main] INFO  - Selected manufacturer name
+11:08:25.973 [main] INFO  - Clicked view more option
+11:08:26.974 [main] INFO  - Printed upcomming car details
+11:08:33.431 [main] INFO  - Setting the driver
+11:08:39.473 [main] INFO  - Hover on Used Cars
+11:08:45.860 [main] INFO  - Clicked Chennai
+11:08:53.184 [main] INFO  - Scrolled to popular model
+11:08:53.247 [main] INFO  - Printed popular car model names
+11:08:53.584 [main] INFO  - Printed all popular car model details
+11:08:53.594 [main] INFO  - Written popular car model names in excel sheet
+11:08:53.921 [main] INFO  - Written all popular car model details in excel sheet
+11:11:49.501 [main] INFO  - Setting the driver
+11:11:56.054 [main] INFO  - Hover More
+11:11:59.129 [main] INFO  - Clicked Health Insurance
+11:12:19.644 [main] INFO  - Written Health Insurance brand name in excel sheet
+11:12:19.653 [main] INFO  - Written Health Insurance plan in excel sheet
+11:13:54.462 [main] INFO  - Setting the driver
+11:14:01.425 [main] INFO  - Clicked Login button
+11:14:02.791 [main] INFO  - Clicked Google Account
+11:14:03.942 [main] INFO  - Entered random email
+11:14:07.089 [main] INFO  - Error message printed
+11:14:08.700 [main] INFO  - Hover on New Bikes
+11:14:08.979 [main] INFO  - Clicked upcomming bikes
+11:14:10.141 [main] INFO  - Selected manufacturer name
+11:14:12.377 [main] INFO  - Clicked view more option
+11:14:13.336 [main] INFO  - Printed upcomming bike details
+11:14:21.395 [main] INFO  - Hover on New Cars
+11:14:25.105 [main] INFO  - Clicked upcomming cars
+11:14:26.504 [main] INFO  - Selected manufacturer name
+11:14:27.979 [main] INFO  - Clicked view more option
+11:14:29.192 [main] INFO  - Printed upcomming car details
+11:14:34.386 [main] INFO  - Hover on Used Cars
+11:14:37.907 [main] INFO  - Clicked Chennai
+11:14:42.967 [main] INFO  - Scrolled to popular model
+11:14:43.031 [main] INFO  - Printed popular car model names
+11:14:43.564 [main] INFO  - Printed all popular car model details

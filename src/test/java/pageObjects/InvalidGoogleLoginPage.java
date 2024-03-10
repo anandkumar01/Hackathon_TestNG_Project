@@ -70,7 +70,7 @@ public class InvalidGoogleLoginPage extends BasePage {
 	public void printErrorMessage() {
 		explicitWait(errormessage);
 		String message = errormessage.getText();
-		System.out.println("\nError message displayed : " + message);
+		System.out.println("Error message displayed : " + message);
 
 		// Switch back to original browser (first window)
 		driver.switchTo().window(winHandleBefore);
