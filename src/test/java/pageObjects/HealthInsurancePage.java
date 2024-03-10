@@ -91,7 +91,7 @@ public class HealthInsurancePage extends BasePage {
 
 	public void clickHealthInsurance() {
 		explicitWait(healthinsurance);
-		healthinsurance.click();
+		clickToElement(healthinsurance);
 	}
 
 	public void fillBasicDetails() throws IOException, InterruptedException {
@@ -117,7 +117,7 @@ public class HealthInsurancePage extends BasePage {
 		inputpincode.sendKeys(property.getProperty("pincode"));
 
 		explicitWait(continueBtn);
-		clickToElement(continueBtn);
+		continueBtn.click();
 
 		explicitWait(checkbox);
 		if (checkbox.isEnabled()) {
