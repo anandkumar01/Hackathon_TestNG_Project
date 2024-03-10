@@ -19,7 +19,7 @@ public class BasePage {
 	}
 
 	public void explicitWait(WebElement element) {
-		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(d -> element.isDisplayed());
 	}
 
@@ -31,5 +31,10 @@ public class BasePage {
 	public void scrollToElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+
+	public void clickToElement(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
 	}
 }

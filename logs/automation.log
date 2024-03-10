@@ -211,3 +211,81 @@
 11:14:42.967 [main] INFO  - Scrolled to popular model
 11:14:43.031 [main] INFO  - Printed popular car model names
 11:14:43.564 [main] INFO  - Printed all popular car model details
+11:43:58.118 [main] INFO  - Setting the driver
+11:44:03.432 [main] INFO  - Clicked Login button
+11:44:03.649 [main] INFO  - Clicked Google Account
+11:44:04.418 [main] INFO  - Entered random email
+11:44:13.434 [main] INFO  - Setting the driver
+11:44:16.642 [main] INFO  - Clicked Login button
+11:44:17.003 [main] INFO  - Clicked Google Account
+11:44:17.681 [main] INFO  - Entered random email
+11:44:50.560 [main] INFO  - Setting the driver
+11:44:53.967 [main] INFO  - Clicked Login button
+11:44:54.439 [main] INFO  - Clicked Google Account
+11:44:55.264 [main] INFO  - Entered random email
+11:44:56.805 [main] INFO  - Error message printed
+11:46:18.574 [main] INFO  - Setting the driver
+11:46:22.382 [main] INFO  - Clicked Login button
+11:46:22.995 [main] INFO  - Clicked Google Account
+11:46:23.867 [main] INFO  - Entered random email
+11:46:24.508 [main] INFO  - Setting the driver
+11:46:26.998 [main] INFO  - Hover on New Bikes
+11:46:27.344 [main] INFO  - Clicked upcomming bikes
+11:46:27.994 [main] INFO  - Selected manufacturer name
+11:46:28.684 [main] INFO  - Clicked view more option
+11:46:28.816 [main] INFO  - Printed upcomming bike details
+11:46:32.794 [main] INFO  - Setting the driver
+11:46:35.199 [main] INFO  - Hover on New Cars
+11:46:36.525 [main] INFO  - Clicked upcomming cars
+11:46:37.189 [main] INFO  - Selected manufacturer name
+11:46:37.843 [main] INFO  - Clicked view more option
+11:46:38.013 [main] INFO  - Printed upcomming car details
+11:46:40.122 [main] INFO  - Setting the driver
+11:46:42.478 [main] INFO  - Hover on Used Cars
+11:46:43.889 [main] INFO  - Clicked Chennai
+11:46:46.684 [main] INFO  - Scrolled to popular model
+11:46:46.717 [main] INFO  - Printed popular car model names
+11:46:46.816 [main] INFO  - Printed all popular car model details
+11:46:46.818 [main] INFO  - Written popular car model names in excel sheet
+11:46:46.957 [main] INFO  - Written all popular car model details in excel sheet
+11:48:40.477 [main] INFO  - Setting the driver
+11:48:43.182 [main] INFO  - Hover More
+11:48:44.599 [main] INFO  - Clicked Health Insurance
+11:48:45.477 [main] INFO  - Filled Health Insurance basic details
+11:48:51.431 [main] INFO  - Printed Health Insurance brand names
+11:49:07.035 [main] INFO  - Printed Health Insurance plan
+11:49:07.361 [main] INFO  - Written Health Insurance brand name in excel sheet
+11:49:22.852 [main] INFO  - Written Health Insurance plan in excel sheet
+12:05:25.542 [main] INFO  - Setting the driver
+12:05:28.859 [main] INFO  - Clicked Login button
+12:05:29.398 [main] INFO  - Clicked Google Account
+12:05:30.250 [main] INFO  - Entered random email
+12:05:31.759 [main] INFO  - Error message printed
+12:05:34.114 [main] INFO  - Setting the driver
+12:05:36.877 [main] INFO  - Hover on New Bikes
+12:05:37.236 [main] INFO  - Clicked upcomming bikes
+12:05:38.121 [main] INFO  - Selected manufacturer name
+12:05:38.910 [main] INFO  - Clicked view more option
+12:05:39.141 [main] INFO  - Printed upcomming bike details
+12:05:42.572 [main] INFO  - Setting the driver
+12:05:45.014 [main] INFO  - Hover on New Cars
+12:05:46.289 [main] INFO  - Clicked upcomming cars
+12:05:46.847 [main] INFO  - Selected manufacturer name
+12:05:47.438 [main] INFO  - Clicked view more option
+12:05:47.636 [main] INFO  - Printed upcomming car details
+12:05:49.917 [main] INFO  - Setting the driver
+12:05:52.339 [main] INFO  - Hover on Used Cars
+12:05:53.767 [main] INFO  - Clicked Chennai
+12:05:57.114 [main] INFO  - Scrolled to popular model
+12:05:57.152 [main] INFO  - Printed popular car model names
+12:05:57.262 [main] INFO  - Printed all popular car model details
+12:05:57.264 [main] INFO  - Written popular car model names in excel sheet
+12:05:57.430 [main] INFO  - Written all popular car model details in excel sheet
+12:07:51.179 [main] INFO  - Setting the driver
+12:07:53.554 [main] INFO  - Hover More
+12:07:54.958 [main] INFO  - Clicked Health Insurance
+12:07:56.144 [main] INFO  - Filled Health Insurance basic details
+12:08:09.019 [main] INFO  - Printed Health Insurance brand names
+12:08:24.272 [main] INFO  - Printed Health Insurance plan
+12:08:24.520 [main] INFO  - Written Health Insurance brand name in excel sheet
+12:08:39.983 [main] INFO  - Written Health Insurance plan in excel sheet

@@ -9,29 +9,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC005_HealthInsurance">
-        <methods>
-          <include name="testWriteHealthInsuranceBrandName"/>
-          <include name="testWriteHealthInsurancePlan"/>
-          <include name="testHealthInsurance"/>
-          <include name="initializeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC005_HealthInsurance -->
       <class name="testCases.TC001_InvalidGoogleLogin">
         <methods>
           <include name="testInvalidGoogleLogin"/>
-          <include name="closeBrowser"/>
           <include name="initializeBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- testCases.TC001_InvalidGoogleLogin -->
-      <class name="testCases.TC004_UsedCarDetails">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="initializeBrowser"/>
-          <include name="testWriteAllPopularCarModelDetails"/>
-        </methods>
-      </class> <!-- testCases.TC004_UsedCarDetails -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

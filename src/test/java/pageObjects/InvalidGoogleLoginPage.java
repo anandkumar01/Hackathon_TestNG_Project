@@ -3,7 +3,6 @@ package pageObjects;
 import java.util.Random;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,17 +42,29 @@ public class InvalidGoogleLoginPage extends BasePage {
 
 	public void clickGoogleAccount() {
 		explicitWait(google);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		try {
-			js.executeScript("arguments[0].click();", google);
+			clickToElement(google);
 		} catch (Exception e) {
 			System.out.println("Google option is not clickable");
 		}
 	}
 
+	private static String generateRandomString(int length) {
+		String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		Random random = new Random();
+		StringBuilder sb = new StringBuilder(length);
+
+		for (int i = 0; i < length; i++) {
+			int randomIndex = random.nextInt(characters.length());
+			sb.append(characters.charAt(randomIndex));
+		}
+
+		return sb.toString();
+	}
+
 	public void enterRandomEmail() {
-		Random randomGenerator = new Random();
-		int randomInt = randomGenerator.nextInt(1000);
+		Random random = new Random();
+		int randomInt = random.nextInt(1000);
 
 		// Store the current window handle
 		winHandleBefore = driver.getWindowHandle();
@@ -63,8 +74,9 @@ public class InvalidGoogleLoginPage extends BasePage {
 		for (String winHandle : driver.getWindowHandles()) {
 			driver.switchTo().window(winHandle);
 		}
-		emailinput.sendKeys("username" + randomInt + "@gmail,com");
-		nextbutton.click();
+		String prefix = generateRandomString(8);
+		emailinput.sendKeys(prefix + randomInt + "@gmail,com");
+		clickToElement(nextbutton);
 	}
 
 	public void printErrorMessage() {

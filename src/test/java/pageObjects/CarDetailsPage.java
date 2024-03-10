@@ -6,7 +6,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Properties;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,13 +59,13 @@ public class CarDetailsPage extends BasePage {
 	List<WebElement> carlaunchdate;
 
 	public void hoverNewCars() {
-		zigwheels.click();
+		clickToElement(zigwheels);
 		explicitWait(newcars);
 		hoverOnElement(newcars);
 	}
 
 	public void clickUpcomingCars() {
-		upcomingcar.click();
+		clickToElement(upcomingcar);
 	}
 
 	public void selectManufacturer() throws IOException {
@@ -76,10 +75,9 @@ public class CarDetailsPage extends BasePage {
 	}
 
 	public void clickToViewMore() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		scrollToElement(scroll);
 		explicitWait(viewmore);
-		js.executeScript("arguments[0].click();", viewmore);
+		clickToElement(viewmore);
 	}
 
 	public LinkedHashMap<String, List<String>> getUpcomingCarDetails() {

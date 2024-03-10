@@ -86,7 +86,6 @@ public class CrossBrowsing {
 
 		} catch (Exception e) {
 			System.err.println("Error during browser initialization: " + e.getMessage());
-			e.printStackTrace();
 		}
 		return driver;
 	}

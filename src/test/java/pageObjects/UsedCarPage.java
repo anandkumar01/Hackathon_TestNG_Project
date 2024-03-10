@@ -3,7 +3,6 @@ package pageObjects;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -93,8 +92,7 @@ public class UsedCarPage extends BasePage {
 	}
 
 	public void clickCheckBox(WebElement element) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", element);
+		clickToElement(element);
 	}
 
 	public List<List<List<String>>> getAllPopularCarModelDetails() throws InterruptedException {

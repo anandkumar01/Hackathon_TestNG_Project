@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +21,12 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\2303799\eclipse-workspace\Hackathon_TestNG_Project\testng.xml</span>
+                    <span>C:\Users\vishw\eclipse-workspace\Hackathon_TestNG_Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,41 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 5 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testHealthInsurance">testHealthInsurance</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_InvalidGoogleLogin" class="method navigator-link" hash-for-method="testInvalidGoogleLogin">testInvalidGoogleLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="testWriteAllPopularCarModelDetails">testWriteAllPopularCarModelDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testWriteHealthInsuranceBrandName">testWriteHealthInsuranceBrandName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testWriteHealthInsurancePlan">testWriteHealthInsurancePlan</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -147,7 +114,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testHealthInsurance">testHealthInsurance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_InvalidGoogleLogin" class="method navigator-link" hash-for-method="testInvalidGoogleLogin">testInvalidGoogleLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="testUsedCars">testUsedCars</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_UsedCarDetails" class="method navigator-link" hash-for-method="testWriteAllPopularCarModelDetails">testWriteAllPopularCarModelDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,6 +140,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC003_CarDetails" class="method navigator-link" hash-for-method="testWriteCarDetails">testWriteCarDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testWriteHealthInsuranceBrandName">testWriteHealthInsuranceBrandName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_HealthInsurance" class="method navigator-link" hash-for-method="testWriteHealthInsurancePlan">testWriteHealthInsurancePlan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -177,233 +169,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC005_HealthInsurance</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testHealthInsurance">
-                  </a> <!-- testHealthInsurance -->
-                  <span class="method-name">testHealthInsurance</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for pageObjects.BasePage$$Lambda$688/0x0000000800421000@2f2a5064 (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.BasePage.explicitWait(BasePage.java:23)
-	at pageObjects.HealthInsurancePage.clickHealthInsurance(HealthInsurancePage.java:93)
-	at testCases.TC005_HealthInsurance.testHealthInsurance(TC005_HealthInsurance.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.130)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35a32573a20e73f9dca1455d604a17b9, findElement {using=xpath, value=//span[contains(text(), &apos;Health Insurance&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50183/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 35a32573a20e73f9dca1455d604a17b9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at pageObjects.BasePage.lambda$0(BasePage.java:23)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 31 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWriteHealthInsuranceBrandName">
-                  </a> <!-- testWriteHealthInsuranceBrandName -->
-                  <span class="method-name">testWriteHealthInsuranceBrandName</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.130)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35a32573a20e73f9dca1455d604a17b9, findElement {using=xpath, value=//div[@class=&apos;disclaimer&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50183/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 35a32573a20e73f9dca1455d604a17b9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:462)
-	at pageObjects.BasePage.scrollToElement(BasePage.java:33)
-	at pageObjects.HealthInsurancePage.getHealthInsuranceBrandName(HealthInsurancePage.java:131)
-	at testCases.TC005_HealthInsurance.testWriteHealthInsuranceBrandName(TC005_HealthInsurance.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWriteHealthInsurancePlan">
-                  </a> <!-- testWriteHealthInsurancePlan -->
-                  <span class="method-name">testWriteHealthInsurancePlan</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.130)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35a32573a20e73f9dca1455d604a17b9, findElements {using=xpath, value=//div[starts-with(@class, &apos;quotesListWrapper&apos;)]/div/div/div[2]/div/div[2]/div[2]/div//button/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50183/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 35a32573a20e73f9dca1455d604a17b9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:369)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.iterator(Unknown Source)
-	at pageObjects.HealthInsurancePage.getInsurancePlan(HealthInsurancePage.java:151)
-	at testCases.TC005_HealthInsurance.testWriteHealthInsurancePlan(TC005_HealthInsurance.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC001_InvalidGoogleLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidGoogleLogin">
-                  </a> <!-- testInvalidGoogleLogin -->
-                  <span class="method-name">testInvalidGoogleLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;email&apos;]&quot;}
-  (Session info: chrome=120.0.6099.130)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1754c21e4d60b39e422585a51de307e9, findElement {using=xpath, value=//input[@type=&apos;email&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49388/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1754c21e4d60b39e422585a51de307e9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
-	at pageObjects.InvalidGoogleLoginPage.enterRandomEmail(InvalidGoogleLoginPage.java:66)
-	at testCases.TC001_InvalidGoogleLogin.testInvalidGoogleLogin(TC001_InvalidGoogleLogin.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC004_UsedCarDetails</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWriteAllPopularCarModelDetails">
-                  </a> <!-- testWriteAllPopularCarModelDetails -->
-                  <span class="method-name">testWriteAllPopularCarModelDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=120.0.6099.130)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [afc5512d2d8f66f124c1f7bc3b066ba5, findElement {using=xpath, value=//div[@id=&quot;thatsAllFolks&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49618/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: afc5512d2d8f66f124c1f7bc3b066ba5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:462)
-	at pageObjects.BasePage.scrollToElement(BasePage.java:33)
-	at pageObjects.UsedCarPage.getPopularCarModelDetails(UsedCarPage.java:114)
-	at pageObjects.UsedCarPage.getAllPopularCarModelDetails(UsedCarPage.java:102)
-	at testCases.TC004_UsedCarDetails.testWriteAllPopularCarModelDetails(TC004_UsedCarDetails.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -422,6 +187,64 @@ Session ID: afc5512d2d8f66f124c1f7bc3b066ba5
                   <a name="testWriteBikeDetails">
                   </a> <!-- testWriteBikeDetails -->
                   <span class="method-name">testWriteBikeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC005_HealthInsurance</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHealthInsurance">
+                  </a> <!-- testHealthInsurance -->
+                  <span class="method-name">testHealthInsurance</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWriteHealthInsuranceBrandName">
+                  </a> <!-- testWriteHealthInsuranceBrandName -->
+                  <span class="method-name">testWriteHealthInsuranceBrandName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWriteHealthInsurancePlan">
+                  </a> <!-- testWriteHealthInsurancePlan -->
+                  <span class="method-name">testWriteHealthInsurancePlan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC004_UsedCarDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsedCars">
+                  </a> <!-- testUsedCars -->
+                  <span class="method-name">testUsedCars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWriteAllPopularCarModelDetails">
+                  </a> <!-- testWriteAllPopularCarModelDetails -->
+                  <span class="method-name">testWriteAllPopularCarModelDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWritePopularCarModel">
+                  </a> <!-- testWritePopularCarModel -->
+                  <span class="method-name">testWritePopularCarModel</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -451,21 +274,14 @@ Session ID: afc5512d2d8f66f124c1f7bc3b066ba5
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC004_UsedCarDetails</span>
+              <span class="class-name">testCases.TC001_InvalidGoogleLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testUsedCars">
-                  </a> <!-- testUsedCars -->
-                  <span class="method-name">testUsedCars</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWritePopularCarModel">
-                  </a> <!-- testWritePopularCarModel -->
-                  <span class="method-name">testWritePopularCarModel</span>
+                  <a name="testInvalidGoogleLogin">
+                  </a> <!-- testInvalidGoogleLogin -->
+                  <span class="method-name">testInvalidGoogleLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -473,7 +289,7 @@ Session ID: afc5512d2d8f66f124c1f7bc3b066ba5
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2303799\eclipse-workspace\Hackathon_TestNG_Project\testng.xml</span>
+            <span class="header-content">C:\Users\vishw\eclipse-workspace\Hackathon_TestNG_Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -616,52 +432,52 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testWriteAllPopularCarModelDetails')
 data.setCell(0, 2, 'testCases.TC004_UsedCarDetails')
-data.setCell(0, 3, 174362);
+data.setCell(0, 3, 113318);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testHealthInsurance')
 data.setCell(1, 2, 'testCases.TC005_HealthInsurance')
-data.setCell(1, 3, 23590);
+data.setCell(1, 3, 30971);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testUsedCars')
-data.setCell(2, 2, 'testCases.TC004_UsedCarDetails')
-data.setCell(2, 3, 14123);
+data.setCell(2, 1, 'testWriteHealthInsuranceBrandName')
+data.setCell(2, 2, 'testCases.TC005_HealthInsurance')
+data.setCell(2, 3, 15458);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCarDetails')
-data.setCell(3, 2, 'testCases.TC003_CarDetails')
-data.setCell(3, 3, 12378);
+data.setCell(3, 1, 'testUsedCars')
+data.setCell(3, 2, 'testCases.TC004_UsedCarDetails')
+data.setCell(3, 3, 4927);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testBikeDetails')
-data.setCell(4, 2, 'testCases.TC002_BikeDetails')
-data.setCell(4, 3, 10312);
+data.setCell(4, 1, 'testInvalidGoogleLogin')
+data.setCell(4, 2, 'testCases.TC001_InvalidGoogleLogin')
+data.setCell(4, 3, 4922);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testWriteBikeDetails')
-data.setCell(5, 2, 'testCases.TC002_BikeDetails')
-data.setCell(5, 3, 4495);
+data.setCell(5, 1, 'testCarDetails')
+data.setCell(5, 2, 'testCases.TC003_CarDetails')
+data.setCell(5, 3, 3714);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testWriteCarDetails')
-data.setCell(6, 2, 'testCases.TC003_CarDetails')
-data.setCell(6, 3, 1957);
+data.setCell(6, 1, 'testBikeDetails')
+data.setCell(6, 2, 'testCases.TC002_BikeDetails')
+data.setCell(6, 3, 3462);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testInvalidGoogleLogin')
-data.setCell(7, 2, 'testCases.TC001_InvalidGoogleLogin')
-data.setCell(7, 3, 1244);
+data.setCell(7, 1, 'testWriteBikeDetails')
+data.setCell(7, 2, 'testCases.TC002_BikeDetails')
+data.setCell(7, 3, 1972);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testWritePopularCarModel')
-data.setCell(8, 2, 'testCases.TC004_UsedCarDetails')
-data.setCell(8, 3, 326);
+data.setCell(8, 1, 'testWriteCarDetails')
+data.setCell(8, 2, 'testCases.TC003_CarDetails')
+data.setCell(8, 3, 992);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testWriteHealthInsurancePlan')
 data.setCell(9, 2, 'testCases.TC005_HealthInsurance')
-data.setCell(9, 3, 6);
+data.setCell(9, 3, 328);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testWriteHealthInsuranceBrandName')
-data.setCell(10, 2, 'testCases.TC005_HealthInsurance')
-data.setCell(10, 3, 5);
+data.setCell(10, 1, 'testWritePopularCarModel')
+data.setCell(10, 2, 'testCases.TC004_UsedCarDetails')
+data.setCell(10, 3, 161);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -694,9 +510,9 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC001_InvalidGoogleLogin</span>
+              <span class="ignored-class-name">testCases.TC004_UsedCarDetails</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">smokeInvalidGoogleLogin</span>
+                <span class="ignored-method-name">smokePopularCarModel</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -708,9 +524,9 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC004_UsedCarDetails</span>
+              <span class="ignored-class-name">testCases.TC001_InvalidGoogleLogin</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">smokePopularCarModel</span>
+                <span class="ignored-method-name">smokeInvalidGoogleLogin</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -728,106 +544,96 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testInvalidGoogleLogin</span>
-                <span class="method-start">10365 ms</span>
+                <span class="method-start">3865 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11626 ms</span>
+                <span class="method-start">8793 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC002_BikeDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">12824 ms</span>
+                <span class="method-start">9146 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testBikeDetails</span>
-                <span class="method-start">18761 ms</span>
+                <span class="method-start">11897 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWriteBikeDetails</span>
-                <span class="method-start">29077 ms</span>
+                <span class="method-start">15361 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">33576 ms</span>
+                <span class="method-start">17334 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC003_CarDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">34994 ms</span>
+                <span class="method-start">17604 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCarDetails</span>
-                <span class="method-start">40601 ms</span>
+                <span class="method-start">20041 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWriteCarDetails</span>
-                <span class="method-start">52983 ms</span>
+                <span class="method-start">23756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">54942 ms</span>
+                <span class="method-start">24749 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_UsedCarDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">56315 ms</span>
+                <span class="method-start">24950 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testUsedCars</span>
-                <span class="method-start">62346 ms</span>
+                <span class="method-start">27368 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWritePopularCarModel</span>
-                <span class="method-start">76476 ms</span>
+                <span class="method-start">32295 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testWriteAllPopularCarModelDetails</span>
-                <span class="method-start">76804 ms</span>
+                <span class="method-start">32459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">251170 ms</span>
+                <span class="method-start">145778 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC005_HealthInsurance</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
-                <span class="method-start">252385 ms</span>
+                <span class="method-start">146212 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testHealthInsurance</span>
-                <span class="method-start">258933 ms</span>
+                <span class="method-start">148582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testWriteHealthInsuranceBrandName</span>
-                <span class="method-start">282527 ms</span>
+                <span class="method-start">179553 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testWriteHealthInsurancePlan</span>
-                <span class="method-start">282536 ms</span>
+                <span class="method-start">195016 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">282544 ms</span>
+                <span class="method-start">195357 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
